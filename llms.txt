@@ -15,5 +15,6 @@
 
 ## Contact
 - Website: https://www.huntertigert.com/
+- Contact form: https://www.huntertigert.com/#contact
 - LinkedIn: https://www.linkedin.com/in/hunter-tigert-35ba9b104
 - GitHub: https://github.com/huntertigert

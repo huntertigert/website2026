@@ -3,10 +3,29 @@
   var root = document.documentElement;
   var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
-  /* ---- Email link: address is not in the HTML, it is assembled here to keep it away from scrapers ---- */
-  var mail = document.getElementById("email-link");
-  if (mail && mail.dataset.m) {
-    try { mail.href = "mailto:" + atob(mail.dataset.m) + "?subject=Project%20inquiry"; mail.removeAttribute("data-m"); } catch (e) {}
+  /* ---- Contact form: submit in place (falls back to a normal POST without JS) ---- */
+  var form = document.getElementById("contact-form");
+  var status = document.getElementById("form-status");
+  if (form && status && window.fetch) {
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+      var btn = form.querySelector('button[type="submit"]');
+      var label = btn.textContent;
+      btn.disabled = true; btn.textContent = "Sending…";
+      status.className = "form-status"; status.textContent = "";
+      fetch(form.action, { method: "POST", body: new FormData(form), headers: { Accept: "application/json" } })
+        .then(function (res) {
+          if (!res.ok) throw new Error("bad response");
+          form.reset();
+          status.className = "form-status ok";
+          status.textContent = "Thanks! Your message is on its way — I'll reply personally, usually within a day.";
+        })
+        .catch(function () {
+          status.className = "form-status err";
+          status.textContent = "Sorry, that didn't send. Please try again, or reach me on LinkedIn.";
+        })
+        .then(function () { btn.disabled = false; btn.textContent = label; });
+    });
   }
 
   /* ---- Theme toggle (initial theme is set by the inline script in <head>) ---- */
