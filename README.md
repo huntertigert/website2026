@@ -24,5 +24,5 @@ vercel.json         Security headers and caching
 ## Notes
 
 - Vercel Web Analytics and Speed Insights scripts are included. Enable both in the Vercel dashboard (project → Analytics / Speed Insights) — until then, `/_vercel/...` returns 404 (harmless).
-- Contact is a `mailto:` link, so no form backend is needed.
+- Contact is a `mailto:` link. The address is stored base64-encoded in `data-m` on `#email-link` and turned into the link by `js/main.js`, so it isn't in the page HTML, structured data, or `llms.txt`. To change it: `echo -n 'you@example.com' | base64`.
 - The original single-file bundle version is in this repo's git history.

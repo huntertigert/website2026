@@ -3,6 +3,12 @@
   var root = document.documentElement;
   var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
+  /* ---- Email link: address is not in the HTML, it is assembled here to keep it away from scrapers ---- */
+  var mail = document.getElementById("email-link");
+  if (mail && mail.dataset.m) {
+    try { mail.href = "mailto:" + atob(mail.dataset.m) + "?subject=Project%20inquiry"; mail.removeAttribute("data-m"); } catch (e) {}
+  }
+
   /* ---- Theme toggle (initial theme is set by the inline script in <head>) ---- */
   var toggle = document.getElementById("theme-toggle");
   var themeMeta = document.querySelector('meta[name="theme-color"]');

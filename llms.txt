@@ -15,6 +15,5 @@
 
 ## Contact
 - Website: https://www.huntertigert.com/
-- Email: tigertdevelopment@gmail.com
 - LinkedIn: https://www.linkedin.com/in/hunter-tigert-35ba9b104
 - GitHub: https://github.com/huntertigert
