@@ -1,0 +1,20 @@
+# Hunter Tigert — Web Development
+
+> Hunter Tigert is a front-end focused web developer based in Rockwall, Texas. He designs and builds fast, responsive websites and web applications — custom React and Tailwind builds, WordPress sites, and integrations with HubSpot, Salesforce, and Pardot.
+
+## Services
+- Custom-built websites (React, Tailwind, or WordPress)
+- Design and development
+- Support and maintenance
+- AI-accelerated builds
+
+## Work
+- [Content Freshness Dashboard](https://github.com/huntertigert/content-freshness-dashboard): tracks content freshness across SEO and AI search (GEO) performance.
+- [Travel Journal](https://github.com/huntertigert/travel-journal): React app that builds a travel journal from structured trip data. Live: https://travel-journal-virid-gamma.vercel.app/
+- [Content Summarizer](https://github.com/huntertigert/content-summarizer): CLI tool using the Claude API to summarize articles and write social captions.
+
+## Contact
+- Website: https://www.huntertigert.com/
+- Email: tigertdevelopment@gmail.com
+- LinkedIn: https://www.linkedin.com/in/hunter-tigert-35ba9b104
+- GitHub: https://github.com/huntertigert

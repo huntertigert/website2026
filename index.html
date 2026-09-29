@@ -1,556 +1,663 @@
 <!DOCTYPE html>
-<html><head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Hunter Tigert</title>
-<link rel="icon" href="images/hunter-tigert.png">
-<script>window.__resources = {"https://unpkg.com/react@18.3.1/umd/react.production.min.js": "js/vendor/react.production.min.js", "https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js": "js/vendor/react-dom.production.min.js"};</script>
-<script src="js/dc-runtime.js"></script>
+<html lang="en-US" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hunter Tigert | Web Development in Rockwall, TX</title>
+  <meta name="description" content="Hunter Tigert is a web developer in Rockwall, TX. Fast, accessible React, Tailwind and WordPress websites with HubSpot and Salesforce integrations.">
+  <link rel="canonical" href="https://www.huntertigert.com/">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+  <meta name="author" content="Hunter Tigert">
+  <meta name="theme-color" content="#17181C">
+  <meta name="color-scheme" content="dark light">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Hunter Tigert">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:title" content="Hunter Tigert | Web Development in Rockwall, TX">
+  <meta property="og:description" content="Hunter Tigert is a web developer in Rockwall, TX. Fast, accessible React, Tailwind and WordPress websites with HubSpot and Salesforce integrations.">
+  <meta property="og:url" content="https://www.huntertigert.com/">
+  <meta property="og:image" content="https://www.huntertigert.com/images/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Hunter Tigert — Web Development in Rockwall, TX">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Hunter Tigert | Web Development in Rockwall, TX">
+  <meta name="twitter:description" content="Hunter Tigert is a web developer in Rockwall, TX. Fast, accessible React, Tailwind and WordPress websites with HubSpot and Salesforce integrations.">
+  <meta name="twitter:image" content="https://www.huntertigert.com/images/og-image.jpg">
+  <meta name="twitter:image:alt" content="Hunter Tigert — Web Development in Rockwall, TX">
+
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="favicon.ico" sizes="48x48">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+  <link rel="preload" href="fonts/roboto-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/styles.css">
+  <script>try{var t=localStorage.getItem('theme');if(t==='light'||t==='dark')document.documentElement.setAttribute('data-theme',t)}catch(e){}</script>
+
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://www.huntertigert.com/#website",
+      "url": "https://www.huntertigert.com/",
+      "name": "Hunter Tigert",
+      "description": "Hunter Tigert is a web developer in Rockwall, TX. Fast, accessible React, Tailwind and WordPress websites with HubSpot and Salesforce integrations.",
+      "inLanguage": "en-US",
+      "publisher": {
+        "@id": "https://www.huntertigert.com/#person"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://www.huntertigert.com/#webpage",
+      "url": "https://www.huntertigert.com/",
+      "name": "Hunter Tigert | Web Development in Rockwall, TX",
+      "description": "Hunter Tigert is a web developer in Rockwall, TX. Fast, accessible React, Tailwind and WordPress websites with HubSpot and Salesforce integrations.",
+      "inLanguage": "en-US",
+      "isPartOf": {
+        "@id": "https://www.huntertigert.com/#website"
+      },
+      "about": {
+        "@id": "https://www.huntertigert.com/#service"
+      },
+      "primaryImageOfPage": {
+        "@id": "https://www.huntertigert.com/#primaryimage"
+      }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://www.huntertigert.com/#person",
+      "name": "Hunter Tigert",
+      "givenName": "Hunter",
+      "familyName": "Tigert",
+      "jobTitle": "Web Developer",
+      "url": "https://www.huntertigert.com/",
+      "email": "tigertdevelopment@gmail.com",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Rockwall",
+        "addressRegion": "TX",
+        "addressCountry": "US"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "@id": "https://www.huntertigert.com/#primaryimage",
+        "url": "https://www.huntertigert.com/images/hunter-tigert-400.jpg",
+        "width": 400,
+        "height": 400,
+        "caption": "Portrait of Hunter Tigert"
+      },
+      "sameAs": [
+        "https://www.linkedin.com/in/hunter-tigert-35ba9b104",
+        "https://github.com/huntertigert"
+      ],
+      "knowsAbout": [
+        "Web development",
+        "Front-end development",
+        "React",
+        "Tailwind CSS",
+        "TypeScript",
+        "JavaScript",
+        "WordPress",
+        "HubSpot",
+        "Salesforce",
+        "Pardot"
+      ]
+    },
+    {
+      "@type": "ProfessionalService",
+      "@id": "https://www.huntertigert.com/#service",
+      "name": "Hunter Tigert — Web Development",
+      "url": "https://www.huntertigert.com/",
+      "description": "Hunter Tigert is a web developer in Rockwall, TX. Fast, accessible React, Tailwind and WordPress websites with HubSpot and Salesforce integrations.",
+      "image": "https://www.huntertigert.com/images/hunter-tigert-400.jpg",
+      "email": "tigertdevelopment@gmail.com",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Rockwall",
+        "addressRegion": "TX",
+        "addressCountry": "US"
+      },
+      "founder": {
+        "@id": "https://www.huntertigert.com/#person"
+      },
+      "sameAs": [
+        "https://www.linkedin.com/in/hunter-tigert-35ba9b104",
+        "https://github.com/huntertigert"
+      ],
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Rockwall, TX"
+        },
+        {
+          "@type": "Place",
+          "name": "Dallas–Fort Worth, TX"
+        }
+      ],
+      "serviceType": "Web development",
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Web development services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Custom-built websites",
+              "description": "Hand-coded with React and Tailwind, or built on WordPress when a content platform fits better — whichever gets your project done right."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Design and development",
+              "description": "Responsive sites designed and built from scratch, tailored to your brand and timeline."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Support and maintenance",
+              "description": "Routine maintenance, hosting, and ongoing support so your site stays fast and secure, on any platform."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "AI-accelerated builds",
+              "description": "AI-integrated development speeds up build time without cutting corners, so you get a faster turnaround at a lower cost."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "ItemList",
+      "@id": "https://www.huntertigert.com/#work",
+      "name": "Selected work",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@type": "SoftwareSourceCode",
+            "name": "Content Freshness Dashboard",
+            "description": "A dashboard for tracking content freshness across SEO and AI search (GEO) performance.",
+            "codeRepository": "https://github.com/huntertigert/content-freshness-dashboard",
+            "programmingLanguage": "TypeScript",
+            "author": {
+              "@id": "https://www.huntertigert.com/#person"
+            },
+            "image": "https://www.huntertigert.com/images/projects/freshness-720.webp"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@type": "SoftwareSourceCode",
+            "name": "Travel Journal",
+            "description": "A React app that dynamically builds a travel journal from structured trip data.",
+            "codeRepository": "https://github.com/huntertigert/travel-journal",
+            "programmingLanguage": "JavaScript",
+            "author": {
+              "@id": "https://www.huntertigert.com/#person"
+            },
+            "image": "https://www.huntertigert.com/images/projects/journal-720.webp",
+            "url": "https://travel-journal-virid-gamma.vercel.app/"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@type": "SoftwareSourceCode",
+            "name": "Content Summarizer",
+            "description": "A CLI tool powered by the Claude API that summarizes articles and generates ready-to-post social captions.",
+            "codeRepository": "https://github.com/huntertigert/content-summarizer",
+            "programmingLanguage": "TypeScript",
+            "author": {
+              "@id": "https://www.huntertigert.com/#person"
+            },
+            "image": "https://www.huntertigert.com/images/projects/summarizer-720.webp"
+          }
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://www.huntertigert.com/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What kind of websites do you build?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "I design and build fast, responsive websites and web applications, from fully custom React and Tailwind builds to WordPress sites and marketing platform integrations."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you build WordPress websites?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. I build WordPress sites when a content platform fits your project better than a custom build, including setups where you can update pages yourself through the WordPress backend. When a custom build is the better fit, I hand-code it with React and Tailwind."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you work with HubSpot?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. I connect websites with HubSpot, Salesforce, and Pardot so forms, leads, and data flow into your marketing tools without manual data entry."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Where are you located?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "I am a web developer based in Rockwall, Texas. You work with me directly, with no account managers and no relay delays."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is your process?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Every project follows four steps: discovery (goals, scope, and timeline), design (layouts and direction shaped around your brand and users), build (focused sprints with progress you can see), and launch and support (deployed, tested, and backed by ongoing support if you need it)."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I update the website myself?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Sites are built so you can update pages yourself, whether that's through a WordPress backend or a simple custom CMS."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you offer support after launch?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. I offer routine maintenance, hosting, and ongoing support so your site stays fast and secure, on any platform."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you use AI in your development work?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. AI-assisted workflows speed up development, which means a faster turnaround and lower cost for you, without cutting corners on quality."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much does a website cost and how long does it take?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Pricing and timelines depend on the scope of the project, so I don't publish fixed rates. Tell me about your project and I will reply personally, usually within a day, with next steps."
+          }
+        }
+      ]
+    }
+  ]
+}
+  </script>
 </head>
 <body>
-<x-dc>
-<helmet>
-  <link rel="stylesheet" href="css/alkami-icons.css">
-  <link rel="stylesheet" href="css/iris-tokens.css">
-  <link rel="stylesheet" href="css/iris-preview-base.css">
-  <link rel="stylesheet" href="css/iris-theme.css">
-  <link rel="stylesheet" href="css/material-symbols.css">
-  <script src="js/iris-design-system.js"></script>
-  <script src="js/image-slot.js"></script>
-  <script src="js/project-images.js"></script>
-  
-  <link rel="stylesheet" href="css/site.css">
-</helmet>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <svg class="sprite" aria-hidden="true" focusable="false"><symbol id="i-bolt" viewBox="0 -960 960 960"><path d="M422 -232 629 -480H469L498 -707L313 -440H452ZM360 -360H236Q212 -360 200.5 -381.5Q189 -403 203 -423L502 -853Q512 -867 528 -872.5Q544 -878 561 -872Q578 -866 586 -851Q594 -836 592 -819L560 -560H715Q741 -560 751.5 -537Q762 -514 745 -494L416 -100Q405 -87 389 -83Q373 -79 358 -86Q343 -93 334.5 -107.5Q326 -122 328 -139ZM471 -470Z"/></symbol><symbol id="i-smart_toy" viewBox="0 -960 960 960"><path d="M160 -360Q110 -360 75 -395Q40 -430 40 -480Q40 -530 75 -565Q110 -600 160 -600V-680Q160 -713 183.5 -736.5Q207 -760 240 -760H360Q360 -810 395 -845Q430 -880 480 -880Q530 -880 565 -845Q600 -810 600 -760H720Q753 -760 776.5 -736.5Q800 -713 800 -680V-600Q850 -600 885 -565Q920 -530 920 -480Q920 -430 885 -395Q850 -360 800 -360V-200Q800 -167 776.5 -143.5Q753 -120 720 -120H240Q207 -120 183.5 -143.5Q160 -167 160 -200ZM360 -440Q385 -440 402.5 -457.5Q420 -475 420 -500Q420 -525 402.5 -542.5Q385 -560 360 -560Q335 -560 317.5 -542.5Q300 -525 300 -500Q300 -475 317.5 -457.5Q335 -440 360 -440ZM600 -440Q625 -440 642.5 -457.5Q660 -475 660 -500Q660 -525 642.5 -542.5Q625 -560 600 -560Q575 -560 557.5 -542.5Q540 -525 540 -500Q540 -475 557.5 -457.5Q575 -440 600 -440ZM360 -280H600Q617 -280 628.5 -291.5Q640 -303 640 -320Q640 -337 628.5 -348.5Q617 -360 600 -360H360Q343 -360 331.5 -348.5Q320 -337 320 -320Q320 -303 331.5 -291.5Q343 -280 360 -280ZM240 -200H720Q720 -200 720 -200Q720 -200 720 -200V-680Q720 -680 720 -680Q720 -680 720 -680H240Q240 -680 240 -680Q240 -680 240 -680V-200Q240 -200 240 -200Q240 -200 240 -200ZM480 -440Q480 -440 480 -440Q480 -440 480 -440Q480 -440 480 -440Q480 -440 480 -440Q480 -440 480 -440Q480 -440 480 -440Q480 -440 480 -440Q480 -440 480 -440Z"/></symbol><symbol id="i-verified" viewBox="0 -960 960 960"><path d="M438 -452 380 -509Q369 -520 352.5 -520Q336 -520 324 -508Q313 -497 313 -480Q313 -463 324 -452L410 -366Q422 -354 438 -354Q454 -354 466 -366L636 -536Q648 -548 647.5 -564Q647 -580 636 -592Q624 -604 607.5 -604.5Q591 -605 579 -593ZM326 -90 268 -188 158 -212Q143 -215 134 -227.5Q125 -240 127 -255L138 -368L63 -454Q53 -465 53 -480Q53 -495 63 -506L138 -592L127 -705Q125 -720 134 -732.5Q143 -745 158 -748L268 -772L326 -870Q334 -883 348 -887.5Q362 -892 376 -886L480 -842L584 -886Q598 -892 612 -887.5Q626 -883 634 -870L692 -772L802 -748Q817 -745 826 -732.5Q835 -720 833 -705L822 -592L897 -506Q907 -495 907 -480Q907 -465 897 -454L822 -368L833 -255Q835 -240 826 -227.5Q817 -215 802 -212L692 -188L634 -90Q626 -77 612 -72.5Q598 -68 584 -74L480 -118L376 -74Q362 -68 348 -72.5Q334 -77 326 -90ZM378 -162 480 -206 584 -162 640 -258 750 -284 740 -396 814 -480 740 -566 750 -678 640 -702 582 -798 480 -754 376 -798 320 -702 210 -678 220 -566 146 -480 220 -396 210 -282 320 -258ZM480 -480Z"/></symbol><symbol id="i-handshake" viewBox="0 -960 960 960"><path d="M475 -160Q479 -160 483 -162Q487 -164 489 -166L817 -494Q829 -506 834.5 -521Q840 -536 840 -551Q840 -567 834.5 -581.5Q829 -596 817 -607L647 -777Q636 -789 621.5 -794.5Q607 -800 591 -800Q576 -800 561 -794.5Q546 -789 534 -777L523 -766L597 -691Q612 -677 619 -659Q626 -641 626 -621Q626 -579 597.5 -550.5Q569 -522 527 -522Q507 -522 488.5 -529Q470 -536 456 -550L381 -624Q381 -624 381 -624Q381 -624 381 -624L206 -449Q203 -446 201.5 -442.5Q200 -439 200 -435Q200 -427 206 -420.5Q212 -414 220 -414Q224 -414 228 -416Q232 -418 234 -420L342 -528Q353 -539 369.5 -539.5Q386 -540 398 -528Q409 -517 409 -500Q409 -483 398 -472L291 -364Q288 -361 286.5 -357.5Q285 -354 285 -350Q285 -342 291 -336Q297 -330 305 -330Q309 -330 313 -332Q317 -334 319 -336L427 -443Q438 -454 454.5 -454.5Q471 -455 483 -443Q494 -432 494 -415Q494 -398 483 -387L376 -279Q373 -277 371.5 -273Q370 -269 370 -265Q370 -257 376 -251Q382 -245 390 -245Q394 -245 397.5 -246.5Q401 -248 404 -251L512 -358Q523 -369 539.5 -369.5Q556 -370 568 -358Q579 -347 579 -330Q579 -313 568 -302L460 -194Q457 -191 455.5 -187.5Q454 -184 454 -180Q454 -172 460.5 -166Q467 -160 475 -160ZM474 -80Q437 -80 408.5 -104.5Q380 -129 375 -166Q341 -171 318 -194Q295 -217 290 -251Q256 -256 233.5 -279.5Q211 -303 206 -336Q168 -341 144 -369Q120 -397 120 -435Q120 -455 127.5 -473.5Q135 -492 149 -506L324 -681Q347 -704 380.5 -704Q414 -704 437 -681L512 -606Q514 -603 518 -601.5Q522 -600 526 -600Q535 -600 541 -605.5Q547 -611 547 -620Q547 -624 545.5 -628Q544 -632 541 -634L398 -777Q387 -789 372.5 -794.5Q358 -800 342 -800Q327 -800 312 -794.5Q297 -789 285 -777L144 -635Q130 -621 124 -602Q118 -583 121 -564Q124 -547 114 -534Q104 -521 87 -519Q70 -517 57 -526.5Q44 -536 42 -553Q36 -591 47.5 -627.5Q59 -664 87 -692L228 -833Q252 -856 281.5 -868Q311 -880 342 -880Q373 -880 402.5 -868Q432 -856 455 -833L466 -822L477 -833Q501 -856 530.5 -868Q560 -880 591 -880Q622 -880 651.5 -868Q681 -856 704 -833L873 -664Q896 -641 908 -611Q920 -581 920 -550Q920 -519 908 -489.5Q896 -460 873 -437L545 -110Q531 -96 512.5 -88Q494 -80 474 -80ZM376 -640Q376 -640 376 -640Q376 -640 376 -640Q376 -640 376 -640Q376 -640 376 -640Q376 -640 376 -640Q376 -640 376 -640Q376 -640 376 -640Q376 -640 376 -640Q376 -640 376 -640Q376 -640 376 -640Q376 -640 376 -640Q376 -640 376 -640Q376 -640 376 -640Q376 -640 376 -640Q376 -640 376 -640Q376 -640 376 -640Z"/></symbol><symbol id="i-design_services" viewBox="0 -960 960 960"><path d="M352 -522 438 -609 382 -666 366 -650Q355 -639 338.5 -638.5Q322 -638 310 -650Q298 -662 298 -678.5Q298 -695 310 -707L325 -722L280 -767L193 -680ZM680 -193 767 -280 722 -325 706 -310Q694 -298 678 -298Q662 -298 650 -310Q638 -322 638 -338Q638 -354 650 -366L665 -382L608 -438L522 -352ZM704 -760 761 -703 704 -760ZM160 -120Q143 -120 131.5 -131.5Q120 -143 120 -160V-273Q120 -281 123 -288.5Q126 -296 132 -302L295 -465L122 -638Q105 -655 105 -680Q105 -705 122 -722L238 -838Q255 -855 280 -854.5Q305 -854 322 -837L496 -664L647 -816Q659 -828 674 -834Q689 -840 705 -840Q721 -840 736 -834Q751 -828 763 -816L816 -762Q828 -750 834 -735Q840 -720 840 -704Q840 -688 834 -673.5Q828 -659 816 -647L665 -495L838 -322Q855 -305 855 -280Q855 -255 838 -238L722 -122Q705 -105 680 -105Q655 -105 638 -122L465 -295L302 -132Q296 -126 288.5 -123Q281 -120 273 -120ZM200 -200H256L648 -591L591 -648L200 -256ZM620 -619 591 -648 648 -591Z"/></symbol><symbol id="i-web" viewBox="0 -960 960 960"><path d="M160 -160Q127 -160 103.5 -183.5Q80 -207 80 -240V-720Q80 -753 103.5 -776.5Q127 -800 160 -800H800Q833 -800 856.5 -776.5Q880 -753 880 -720V-240Q880 -207 856.5 -183.5Q833 -160 800 -160ZM160 -240H580V-380H160V-240Q160 -240 160 -240Q160 -240 160 -240ZM660 -240H800Q800 -240 800 -240Q800 -240 800 -240V-600H660ZM160 -460H580V-600H160Z"/></symbol><symbol id="i-hub" viewBox="0 -960 960 960"><path d="M240 -280Q254 -280 266 -277Q278 -274 289 -269L346 -340Q318 -371 307 -410Q296 -449 302 -488L221 -515Q204 -490 178 -475Q152 -460 120 -460Q70 -460 35 -495Q0 -530 0 -580Q0 -630 35 -665Q70 -700 120 -700Q170 -700 205 -665Q240 -630 240 -580Q240 -578 240 -576Q240 -574 240 -572L321 -544Q341 -580 374.5 -605Q408 -630 450 -637V-724Q411 -735 385.5 -766.5Q360 -798 360 -840Q360 -890 395 -925Q430 -960 480 -960Q530 -960 565 -925Q600 -890 600 -840Q600 -798 574 -766.5Q548 -735 510 -724V-637Q552 -630 585.5 -605Q619 -580 639 -544L720 -572Q720 -574 720 -576Q720 -578 720 -580Q720 -630 755 -665Q790 -700 840 -700Q890 -700 925 -665Q960 -630 960 -580Q960 -530 925 -495Q890 -460 840 -460Q808 -460 781.5 -475Q755 -490 739 -515L658 -488Q664 -449 653 -410.5Q642 -372 614 -340L671 -270Q682 -275 694 -277.5Q706 -280 720 -280Q770 -280 805 -245Q840 -210 840 -160Q840 -110 805 -75Q770 -40 720 -40Q670 -40 635 -75Q600 -110 600 -160Q600 -180 606.5 -198.5Q613 -217 624 -232L567 -303Q526 -280 479.5 -280Q433 -280 392 -303L336 -232Q347 -217 353.5 -198.5Q360 -180 360 -160Q360 -110 325 -75Q290 -40 240 -40Q190 -40 155 -75Q120 -110 120 -160Q120 -210 155 -245Q190 -280 240 -280ZM120 -540Q137 -540 148.5 -551.5Q160 -563 160 -580Q160 -597 148.5 -608.5Q137 -620 120 -620Q103 -620 91.5 -608.5Q80 -597 80 -580Q80 -563 91.5 -551.5Q103 -540 120 -540ZM240 -120Q257 -120 268.5 -131.5Q280 -143 280 -160Q280 -177 268.5 -188.5Q257 -200 240 -200Q223 -200 211.5 -188.5Q200 -177 200 -160Q200 -143 211.5 -131.5Q223 -120 240 -120ZM480 -800Q497 -800 508.5 -811.5Q520 -823 520 -840Q520 -857 508.5 -868.5Q497 -880 480 -880Q463 -880 451.5 -868.5Q440 -857 440 -840Q440 -823 451.5 -811.5Q463 -800 480 -800ZM480 -360Q522 -360 551 -389Q580 -418 580 -460Q580 -502 551 -531Q522 -560 480 -560Q438 -560 409 -531Q380 -502 380 -460Q380 -418 409 -389Q438 -360 480 -360ZM720 -120Q737 -120 748.5 -131.5Q760 -143 760 -160Q760 -177 748.5 -188.5Q737 -200 720 -200Q703 -200 691.5 -188.5Q680 -177 680 -160Q680 -143 691.5 -131.5Q703 -120 720 -120ZM840 -540Q857 -540 868.5 -551.5Q880 -563 880 -580Q880 -597 868.5 -608.5Q857 -620 840 -620Q823 -620 811.5 -608.5Q800 -597 800 -580Q800 -563 811.5 -551.5Q823 -540 840 -540ZM480 -840Q480 -840 480 -840Q480 -840 480 -840Q480 -840 480 -840Q480 -840 480 -840Q480 -840 480 -840Q480 -840 480 -840Q480 -840 480 -840Q480 -840 480 -840ZM120 -580Q120 -580 120 -580Q120 -580 120 -580Q120 -580 120 -580Q120 -580 120 -580Q120 -580 120 -580Q120 -580 120 -580Q120 -580 120 -580Q120 -580 120 -580ZM480 -460Q480 -460 480 -460Q480 -460 480 -460Q480 -460 480 -460Q480 -460 480 -460Q480 -460 480 -460Q480 -460 480 -460Q480 -460 480 -460Q480 -460 480 -460ZM840 -580Q840 -580 840 -580Q840 -580 840 -580Q840 -580 840 -580Q840 -580 840 -580Q840 -580 840 -580Q840 -580 840 -580Q840 -580 840 -580Q840 -580 840 -580ZM240 -160Q240 -160 240 -160Q240 -160 240 -160Q240 -160 240 -160Q240 -160 240 -160Q240 -160 240 -160Q240 -160 240 -160Q240 -160 240 -160Q240 -160 240 -160ZM720 -160Q720 -160 720 -160Q720 -160 720 -160Q720 -160 720 -160Q720 -160 720 -160Q720 -160 720 -160Q720 -160 720 -160Q720 -160 720 -160Q720 -160 720 -160Z"/></symbol><symbol id="i-code" viewBox="0 -960 960 960"><path d="M193 -479 348 -324Q359 -313 359 -296Q359 -279 348 -268Q337 -257 320 -257Q303 -257 292 -268L108 -452Q102 -458 99.5 -465Q97 -472 97 -480Q97 -488 99.5 -495Q102 -502 108 -508L292 -692Q304 -704 320.5 -704Q337 -704 349 -692Q361 -680 361 -663.5Q361 -647 349 -635ZM767 -481 612 -636Q601 -647 601 -664Q601 -681 612 -692Q623 -703 640 -703Q657 -703 668 -692L852 -508Q858 -502 860.5 -495Q863 -488 863 -480Q863 -472 860.5 -465Q858 -458 852 -452L668 -268Q656 -256 640 -256.5Q624 -257 612 -269Q600 -281 600 -297.5Q600 -314 612 -326Z"/></symbol><symbol id="i-build" viewBox="0 -960 960 960"><path d="M360 -360Q260 -360 190 -430Q120 -500 120 -600Q120 -620 123 -640Q126 -660 134 -678Q139 -688 146.5 -693Q154 -698 163 -700Q172 -702 181.5 -699.5Q191 -697 199 -689L304 -584L376 -656L271 -761Q263 -769 260.5 -778.5Q258 -788 260 -797Q262 -806 267 -813.5Q272 -821 282 -826Q300 -834 320 -837Q340 -840 360 -840Q460 -840 530 -770Q600 -700 600 -600Q600 -577 596 -556.5Q592 -536 584 -516L786 -316Q815 -287 815 -245Q815 -203 786 -174Q757 -145 715 -145Q673 -145 644 -175L444 -376Q424 -368 403.5 -364Q383 -360 360 -360ZM360 -440Q386 -440 412 -448Q438 -456 459 -473L702 -230Q707 -225 715.5 -225.5Q724 -226 729 -231Q734 -236 734 -244.5Q734 -253 729 -258L486 -500Q504 -520 512 -546.5Q520 -573 520 -600Q520 -660 481.5 -704.5Q443 -749 386 -758L460 -684Q472 -672 472 -656Q472 -640 460 -628L332 -500Q320 -488 304 -488Q288 -488 276 -500L202 -574Q211 -517 255.5 -478.5Q300 -440 360 -440ZM469 -491Q469 -491 469 -491Q469 -491 469 -491Q469 -491 469 -491Q469 -491 469 -491Q469 -491 469 -491Q469 -491 469 -491Q469 -491 469 -491Q469 -491 469 -491Q469 -491 469 -491Q469 -491 469 -491Q469 -491 469 -491Q469 -491 469 -491Q469 -491 469 -491Q469 -491 469 -491Q469 -491 469 -491Q469 -491 469 -491Z"/></symbol><symbol id="i-light_mode" viewBox="0 -960 960 960"><path d="M480 -360Q530 -360 565 -395Q600 -430 600 -480Q600 -530 565 -565Q530 -600 480 -600Q430 -600 395 -565Q360 -530 360 -480Q360 -430 395 -395Q430 -360 480 -360ZM480 -280Q397 -280 338.5 -338.5Q280 -397 280 -480Q280 -563 338.5 -621.5Q397 -680 480 -680Q563 -680 621.5 -621.5Q680 -563 680 -480Q680 -397 621.5 -338.5Q563 -280 480 -280ZM80 -440Q63 -440 51.5 -451.5Q40 -463 40 -480Q40 -497 51.5 -508.5Q63 -520 80 -520H160Q177 -520 188.5 -508.5Q200 -497 200 -480Q200 -463 188.5 -451.5Q177 -440 160 -440ZM800 -440Q783 -440 771.5 -451.5Q760 -463 760 -480Q760 -497 771.5 -508.5Q783 -520 800 -520H880Q897 -520 908.5 -508.5Q920 -497 920 -480Q920 -463 908.5 -451.5Q897 -440 880 -440ZM440 -800V-880Q440 -897 451.5 -908.5Q463 -920 480 -920Q497 -920 508.5 -908.5Q520 -897 520 -880V-800Q520 -783 508.5 -771.5Q497 -760 480 -760Q463 -760 451.5 -771.5Q440 -783 440 -800ZM440 -80V-160Q440 -177 451.5 -188.5Q463 -200 480 -200Q497 -200 508.5 -188.5Q520 -177 520 -160V-80Q520 -63 508.5 -51.5Q497 -40 480 -40Q463 -40 451.5 -51.5Q440 -63 440 -80ZM226 -678 183 -720Q171 -731 171.5 -748Q172 -765 183 -777Q195 -789 212 -789Q229 -789 240 -777L282 -734Q293 -722 293 -706Q293 -690 282 -678Q271 -666 254.5 -666.5Q238 -667 226 -678ZM720 -183 678 -226Q667 -238 667 -254.5Q667 -271 678 -282Q689 -294 705.5 -293.5Q722 -293 734 -282L777 -240Q789 -229 788.5 -212Q788 -195 777 -183Q765 -171 748 -171Q731 -171 720 -183ZM678 -678Q666 -689 666.5 -705.5Q667 -722 678 -734L720 -777Q731 -789 748 -788.5Q765 -788 777 -777Q789 -765 789 -748Q789 -731 777 -720L734 -678Q722 -667 706 -667Q690 -667 678 -678ZM183 -183Q171 -195 171 -212Q171 -229 183 -240L226 -282Q238 -293 254.5 -293Q271 -293 282 -282Q294 -271 293.5 -254.5Q293 -238 282 -226L240 -183Q229 -171 212 -171.5Q195 -172 183 -183ZM480 -480Q480 -480 480 -480Q480 -480 480 -480Q480 -480 480 -480Q480 -480 480 -480Q480 -480 480 -480Q480 -480 480 -480Q480 -480 480 -480Q480 -480 480 -480Z"/></symbol><symbol id="i-dark_mode" viewBox="0 -960 960 960"><path d="M480 -120Q329 -120 224.5 -224.5Q120 -329 120 -480Q120 -618 210 -719.5Q300 -821 440 -838Q453 -840 463 -834.5Q473 -829 479 -820Q485 -811 485.5 -799Q486 -787 478 -776Q461 -750 452.5 -721Q444 -692 444 -660Q444 -570 507 -507Q570 -444 660 -444Q691 -444 721.5 -453Q752 -462 776 -478Q787 -485 798.5 -484.5Q810 -484 819 -479Q829 -474 834.5 -464Q840 -454 838 -440Q824 -302 720.5 -211Q617 -120 480 -120ZM480 -200Q568 -200 638 -248.5Q708 -297 740 -375Q720 -370 700 -367Q680 -364 660 -364Q537 -364 450.5 -450.5Q364 -537 364 -660Q364 -680 367 -700Q370 -720 375 -740Q297 -708 248.5 -638Q200 -568 200 -480Q200 -364 282 -282Q364 -200 480 -200ZM470 -470Q470 -470 470 -470Q470 -470 470 -470Q470 -470 470 -470Q470 -470 470 -470Q470 -470 470 -470Q470 -470 470 -470Q470 -470 470 -470Q470 -470 470 -470Q470 -470 470 -470Q470 -470 470 -470Q470 -470 470 -470Q470 -470 470 -470Z"/></symbol><symbol id="i-location_on" viewBox="0 -960 960 960"><path d="M480 -186Q602 -298 661 -389.5Q720 -481 720 -552Q720 -661 650.5 -730.5Q581 -800 480 -800Q379 -800 309.5 -730.5Q240 -661 240 -552Q240 -481 299 -389.5Q358 -298 480 -186ZM427 -127Q362 -187 312 -244Q262 -301 228.5 -354.5Q195 -408 177.5 -457.5Q160 -507 160 -552Q160 -702 256.5 -791Q353 -880 480 -880Q607 -880 703.5 -791Q800 -702 800 -552Q800 -507 782.5 -457.5Q765 -408 731.5 -354.5Q698 -301 648 -244Q598 -187 533 -127Q522 -117 508 -112Q494 -107 480 -107Q466 -107 452 -112Q438 -117 427 -127ZM480 -560Q480 -560 480 -560Q480 -560 480 -560Q480 -560 480 -560Q480 -560 480 -560Q480 -560 480 -560Q480 -560 480 -560Q480 -560 480 -560Q480 -560 480 -560ZM480 -480Q513 -480 536.5 -503.5Q560 -527 560 -560Q560 -593 536.5 -616.5Q513 -640 480 -640Q447 -640 423.5 -616.5Q400 -593 400 -560Q400 -527 423.5 -503.5Q447 -480 480 -480Z"/></symbol><symbol id="i-open_in_new" viewBox="0 -960 960 960"><path d="M200 -120Q167 -120 143.5 -143.5Q120 -167 120 -200V-760Q120 -793 143.5 -816.5Q167 -840 200 -840H440Q457 -840 468.5 -828.5Q480 -817 480 -800Q480 -783 468.5 -771.5Q457 -760 440 -760H200Q200 -760 200 -760Q200 -760 200 -760V-200Q200 -200 200 -200Q200 -200 200 -200H760Q760 -200 760 -200Q760 -200 760 -200V-440Q760 -457 771.5 -468.5Q783 -480 800 -480Q817 -480 828.5 -468.5Q840 -457 840 -440V-200Q840 -167 816.5 -143.5Q793 -120 760 -120ZM760 -704 416 -360Q405 -349 388 -349Q371 -349 360 -360Q349 -371 349 -388Q349 -405 360 -416L704 -760H600Q583 -760 571.5 -771.5Q560 -783 560 -800Q560 -817 571.5 -828.5Q583 -840 600 -840H800Q817 -840 828.5 -828.5Q840 -817 840 -800V-600Q840 -583 828.5 -571.5Q817 -560 800 -560Q783 -560 771.5 -571.5Q760 -583 760 -600Z"/></symbol><symbol id="i-mail" viewBox="0 -960 960 960"><path d="M160 -160Q127 -160 103.5 -183.5Q80 -207 80 -240V-720Q80 -753 103.5 -776.5Q127 -800 160 -800H800Q833 -800 856.5 -776.5Q880 -753 880 -720V-240Q880 -207 856.5 -183.5Q833 -160 800 -160ZM800 -640 501 -453Q496 -450 490.5 -448.5Q485 -447 480 -447Q475 -447 469.5 -448.5Q464 -450 459 -453L160 -640V-240Q160 -240 160 -240Q160 -240 160 -240H800Q800 -240 800 -240Q800 -240 800 -240ZM480 -520 800 -720H160ZM160 -640V-630Q160 -635 160 -642.5Q160 -650 160 -659Q160 -679 160 -689Q160 -699 160 -688V-720V-688Q160 -699 160 -688.5Q160 -678 160 -659Q160 -649 160 -641.5Q160 -634 160 -630V-640V-240Q160 -240 160 -240Q160 -240 160 -240Q160 -240 160 -240Q160 -240 160 -240Z"/></symbol></svg>
 
-<div data-theme="{{ theme }}" style="min-height: 100vh; display: flex; flex-direction: column; background: var(--bg-muted); position: relative;">
-
-  <!-- ===== Header ===== -->
-  <header style="position: sticky; top: 0; z-index: 20; background: color-mix(in srgb, var(--bg-base) 92%, transparent); backdrop-filter: blur(6px); border-bottom: 1px solid var(--border-subtle);">
-    <div style="max-width: 1248px; margin: 0 auto; padding: 0 32px; height: 68px; display: flex; align-items: center; gap: 24px;">
-      <a href="#top" style="font-weight: 700; font-size: 17px; color: var(--fg-1); text-decoration: none; letter-spacing: 0.00938rem;">Hunter Tigert</a>
-      <nav style="display: flex; align-items: center; gap: 4px; margin-left: auto;">
-        <a href="#work" style="font-size: 14px; font-weight: 500; color: var(--fg-2); text-decoration: none; padding: 8px 12px; border-radius: var(--radius-soft);" style-hover="color: var(--fg-1); background: var(--bg-muted);">Work</a>
-        <a href="#process" style="font-size: 14px; font-weight: 500; color: var(--fg-2); text-decoration: none; padding: 8px 12px; border-radius: var(--radius-soft);" style-hover="color: var(--fg-1); background: var(--bg-muted);">Process</a>
-        <a href="#skills" style="font-size: 14px; font-weight: 500; color: var(--fg-2); text-decoration: none; padding: 8px 12px; border-radius: var(--radius-soft);" style-hover="color: var(--fg-1); background: var(--bg-muted);">Skills</a>
-        <a href="#services" style="font-size: 14px; font-weight: 500; color: var(--fg-2); text-decoration: none; padding: 8px 12px; border-radius: var(--radius-soft);" style-hover="color: var(--fg-1); background: var(--bg-muted);">Services</a>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="#top" aria-label="Hunter Tigert — back to top">Hunter Tigert</a>
+      <nav class="nav" aria-label="Primary">
+        <a href="#work">Work</a>
+        <a href="#process">Process</a>
+        <a href="#skills">Skills</a>
+        <a href="#services">Services</a>
+        <a href="#faq">FAQ</a>
       </nav>
-      <button sc-camel-on-click="{{ toggleDarkMode }}" aria-label="Toggle dark mode" style="width: 36px; height: 36px; border-radius: 50%; border: 1px solid var(--border-subtle); background: var(--bg-muted); color: var(--fg-1); display: inline-flex; align-items: center; justify-content: center; cursor: pointer;">
-        <span class="ms" style="font-size: 18px;">{{ darkModeIcon }}</span>
+      <button class="theme-toggle" id="theme-toggle" type="button" aria-pressed="true" aria-label="Dark mode">
+        <svg class="icon icon-sun" aria-hidden="true" focusable="false"><use href="#i-light_mode"/></svg><svg class="icon icon-moon" aria-hidden="true" focusable="false"><use href="#i-dark_mode"/></svg>
       </button>
-      <button sc-camel-on-click="{{ openChat }}" class="btn btn-primary btn-sm" style="border: none; cursor: pointer;">Start a project</button>
+      <a class="btn btn-primary btn-sm" href="#contact">Start a project</a>
     </div>
   </header>
 
-  <!-- ===== Hero ===== -->
-  <section id="top" data-screen-label="Hero" style="background: var(--bg-base); border-bottom: 1px solid var(--border-subtle); overflow: hidden;">
-    <div style="max-width: 1248px; margin: 0 auto; padding: 112px 32px 96px; display: flex; align-items: center; gap: 64px; flex-wrap: wrap;">
-      <div style="flex: 1 1 480px; display: flex; flex-direction: column; gap: 24px;">
-        <span class="text-overline" style="color: var(--branded-color-primary);">Front-end developer — Dallas, TX</span>
-        <h1 class="text-display" style="margin: 0; max-width: 15ch; text-wrap: pretty; font-weight: 700;">Web experiences that make your business look as good as it is</h1>
-        <p style="margin: 0; font-size: var(--type-body1-size); line-height: var(--type-body1-line); color: var(--fg-2); max-width: 56ch; text-wrap: pretty;">I'm Hunter, a front-end focused web developer. I design and build fast, responsive sites and web applications — from fully custom React and Tailwind builds to WordPress sites and marketing platform integrations — with an emphasis on clarity, performance, and results.</p>
-        <div style="display: flex; gap: 12px; flex-wrap: wrap;">
-          <button sc-camel-on-click="{{ openChat }}" class="btn btn-primary btn-lg" style="border: none; cursor: pointer;">Start a project</button>
-          <a href="#work" class="btn btn-outlined btn-lg" style="text-decoration: none;">See my work</a>
-        </div>
-        <div style="display: flex; align-items: center; gap: 12px; margin-top: 8px;">
-          <img src="images/hunter-tigert.png" alt="Hunter Tigert" style="width: 48px; height: 48px; border-radius: 50%; object-fit: cover; box-shadow: var(--elevation-100);">
-          <span style="font-size: 13px; color: var(--fg-2);">Hi, I'm Hunter — nice to meet you.</span>
-        </div>
-      </div>
-      <div style="flex: 1 1 420px; position: relative; min-height: 340px; display: flex; align-items: center; justify-content: center;">
-        <div style="width: 100%; max-width: 440px; background: var(--bg-base); border: 1px solid var(--border-subtle); border-radius: var(--radius-card); box-shadow: var(--elevation-300); overflow: hidden;">
-          <div style="display: flex; align-items: center; gap: 8px; padding: 12px 16px; border-bottom: 1px solid var(--border-subtle);">
-            <span style="width: 10px; height: 10px; border-radius: 50%; background: #FF5F56;"></span>
-            <span style="width: 10px; height: 10px; border-radius: 50%; background: #FFBD2E;"></span>
-            <span style="width: 10px; height: 10px; border-radius: 50%; background: #27C93F;"></span>
-            <span style="margin-left: 8px; flex: 1; height: 20px; border-radius: 6px; background: var(--bg-muted);"></span>
+  <main id="main">
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="wrap hero-inner">
+        <div class="hero-copy">
+          <span class="overline">Web development — Rockwall, TX</span>
+          <h1 class="display" id="hero-title">Web experiences that make your business look as good as it is</h1>
+          <p class="hero-lede">I'm Hunter, a front-end focused web developer. I design and build fast, responsive sites and web applications — from fully custom React and Tailwind builds to WordPress sites and marketing platform integrations — with an emphasis on clarity, performance, and results.</p>
+          <div class="actions">
+            <a class="btn btn-primary btn-lg" href="#contact">Start a project</a>
+            <a class="btn btn-outline btn-lg" href="#work">See my work</a>
           </div>
-          <div style="padding: 24px; display: flex; flex-direction: column; gap: 12px; min-height: 260px;">
-            <div style="height: 22px; width: 40%; border-radius: 4px; background: var(--branded-color-primary-light); opacity: 0; animation: block-in 6s ease-in-out infinite; animation-delay: 0s;"></div>
-            <div style="height: 100px; border-radius: var(--radius-soft); background: var(--bg-muted); opacity: 0; animation: block-in 6s ease-in-out infinite; animation-delay: 0.4s;"></div>
-            <div style="height: 12px; width: 90%; border-radius: 3px; background: var(--platform-color-grayscale-100); opacity: 0; animation: block-in 6s ease-in-out infinite; animation-delay: 0.8s;"></div>
-            <div style="height: 12px; width: 70%; border-radius: 3px; background: var(--platform-color-grayscale-100); opacity: 0; animation: block-in 6s ease-in-out infinite; animation-delay: 1s;"></div>
-            <div style="height: 36px; width: 130px; border-radius: var(--radius-button); background: var(--branded-color-primary); opacity: 0; animation: block-in 6s ease-in-out infinite; animation-delay: 1.4s;"></div>
+          <div class="hello">
+            <img src="images/hunter-tigert-96.webp" srcset="images/hunter-tigert-96.webp 1x, images/hunter-tigert-192.webp 2x" width="48" height="48" alt="Portrait of Hunter Tigert">
+            <span>Hi, I'm Hunter — nice to meet you.</span>
           </div>
         </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== Value props ===== -->
-  <section data-screen-label="Value props" style="padding: 56px 0;">
-    <div style="max-width: 1248px; margin: 0 auto; padding: 0 32px; display: flex; flex-direction: column; gap: 8px;">
-      <div style="display: flex; flex-direction: column; gap: 4px; text-align: center;">
-        <span class="text-overline" style="color: var(--branded-color-primary);">One system, four parts</span>
-        <h2 style="margin: 0;">How it all works together</h2>
-      </div>
-      <div style="position: relative; display: flex; align-items: flex-start; justify-content: space-between; gap: 16px; padding-top: 24px; flex-wrap: wrap;">
-        <div style="position: absolute; top: 46px; left: 60px; right: 60px; height: 2px; background: var(--border-subtle); z-index: 0;"></div>
-        <sc-for list="{{ valueProps }}" as="v" hint-placeholder-count="4">
-          <div style="position: relative; z-index: 1; display: flex; flex-direction: column; align-items: center; gap: 14px; text-align: center; flex: 1 1 200px; min-width: 180px;">
-            <div style="width: 68px; height: 68px; border-radius: 50%; background: var(--bg-base); border: 2px solid var(--branded-color-primary); color: var(--branded-color-primary); display: inline-flex; align-items: center; justify-content: center; box-shadow: var(--elevation-100);">
-              <span class="ms" style="font-size: 28px;">{{ v.icon }}</span>
-            </div>
-            <h4 style="margin: 0; font-size: var(--type-h4-size); line-height: 1.4;">{{ v.title }}</h4>
-            <p style="margin: 0; font-size: var(--type-body2-size); line-height: var(--type-body2-line); color: var(--fg-2); max-width: 26ch;">{{ v.desc }}</p>
-          </div>
-        </sc-for>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== Work ===== -->
-  <section id="work" data-screen-label="Selected work" style="padding: 32px 0 72px;">
-    <div style="max-width: 1248px; margin: 0 auto; padding: 0 32px; display: flex; flex-direction: column; gap: 32px;">
-      <div style="display: flex; flex-direction: column; gap: 4px;">
-        <span class="text-overline" style="color: var(--branded-color-primary);">Selected work</span>
-        <h2 style="margin: 0;">Recent projects</h2>
-      </div>
-      <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 24px;">
-        <sc-for list="{{ projects }}" as="p" hint-placeholder-count="3">
-          <div sc-camel-on-click="{{ p.openModal }}" class="card no-pad" style="display: flex; flex-direction: column; overflow: hidden; cursor: pointer;">
-            <div style="height: 200px; position: relative; background: var(--platform-color-grayscale-900);">
-              <image-slot id="{{ p.slotId }}" shape="rect" placeholder="Drop a project screenshot" src="{{ p.image }}" style="filter: saturate(0.9) contrast(1.02);"></image-slot>
-              <div style="position: absolute; inset: 0; background: linear-gradient(180deg, color-mix(in srgb, var(--branded-color-primary) 12%, transparent) 0%, transparent 40%, color-mix(in srgb, var(--bg-base) 65%, transparent) 100%); pointer-events: none;"></div>
-              <div style="position: absolute; inset: 0; border: 1px solid color-mix(in srgb, var(--branded-color-primary) 20%, transparent); pointer-events: none;"></div>
-              <span style="position: absolute; top: 12px; left: 12px; font-size: 11px; font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase; color: #FFFFFF; background: color-mix(in srgb, var(--branded-color-primary) 85%, black); padding: 4px 10px; border-radius: 999px;">{{ p.kind }}</span>
-            </div>
-            <div style="padding: 20px 24px 24px; display: flex; flex-direction: column; gap: 8px;">
-              <div style="display: flex; align-items: center; justify-content: space-between; gap: 8px;">
-                <h4 style="margin: 0; font-size: var(--type-h4-size); line-height: 1.4;">{{ p.title }}</h4>
-                <span class="ms" style="font-size: 18px; color: var(--fg-2);">open_in_full</span>
-              </div>
-              <p style="margin: 0; font-size: var(--type-body2-size); line-height: var(--type-body2-line); color: var(--fg-2);">{{ p.desc }}</p>
-              <div style="display: flex; gap: 8px; flex-wrap: wrap; margin-top: 8px;">
-                <sc-for list="{{ p.tags }}" as="t" hint-placeholder-count="2">
-                  <span class="chip">{{ t }}</span>
-                </sc-for>
-              </div>
-            </div>
-          </div>
-        </sc-for>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== Process ===== -->
-  <section id="process" data-screen-label="Process" style="background: var(--bg-base); border-top: 1px solid var(--border-subtle); border-bottom: 1px solid var(--border-subtle); padding: 72px 0;">
-    <div style="max-width: 1248px; margin: 0 auto; padding: 0 32px; display: flex; flex-direction: column; gap: 32px;">
-      <div style="display: flex; flex-direction: column; gap: 4px;">
-        <span class="text-overline" style="color: var(--branded-color-primary);">How it works</span>
-        <h2 style="margin: 0;">A straightforward process</h2>
-      </div>
-      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 24px;">
-        <sc-for list="{{ steps }}" as="s" hint-placeholder-count="4">
-          <div style="display: flex; flex-direction: column; gap: 8px;">
-            <span class="text-h2" style="color: var(--branded-color-primary); font-weight: 700;">{{ s.num }}</span>
-            <h4 style="margin: 0; font-size: var(--type-h4-size);">{{ s.title }}</h4>
-            <p style="margin: 0; font-size: var(--type-body2-size); line-height: var(--type-body2-line); color: var(--fg-2);">{{ s.desc }}</p>
-          </div>
-        </sc-for>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== Skills ===== -->
-  <section id="skills" data-screen-label="Skills" style="padding: 72px 0; background: var(--bg-base); border-top: 1px solid var(--border-subtle); border-bottom: 1px solid var(--border-subtle);">
-    <div style="max-width: 1248px; margin: 0 auto; padding: 0 32px; display: flex; align-items: center; gap: 64px; flex-wrap: wrap;">
-      <div style="flex: 1 1 480px; display: flex; flex-direction: column; gap: 28px;">
-        <div style="display: flex; flex-direction: column; gap: 4px;">
-          <span class="text-overline" style="color: var(--branded-color-primary);">Capabilities</span>
-          <h2 style="margin: 0;">What that means for your project</h2>
-        </div>
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 24px;">
-          <sc-for list="{{ skillGroups }}" as="g" hint-placeholder-count="4">
-            <div style="display: flex; flex-direction: column; gap: 10px;">
-              <div style="width: 40px; height: 40px; border-radius: var(--radius-rounded); background: var(--branded-color-primary-light); color: var(--branded-color-primary); display: inline-flex; align-items: center; justify-content: center;">
-                <span class="ms" style="font-size: 20px;">{{ g.icon }}</span>
-              </div>
-              <span class="text-subtitle-1" style="line-height: 1.4;">{{ g.name }}</span>
-              <p style="margin: 0; font-size: var(--type-body2-size); line-height: var(--type-body2-line); color: var(--fg-2);">{{ g.desc }}</p>
-            </div>
-          </sc-for>
-        </div>
-      </div>
-      <div style="flex: 1 1 380px; position: relative; min-height: 300px; display: flex; align-items: center; justify-content: center;">
-        <sc-for list="{{ floatingTags }}" as="ft" hint-placeholder-count="3">
-          <span class="chip brand" style="{{ ft.style }}">{{ ft.label }}</span>
-        </sc-for>
-        <div style="width: 100%; max-width: 400px; background: var(--platform-color-grayscale-900); border-radius: var(--radius-card); box-shadow: var(--elevation-300); overflow: hidden;">
-          <div style="display: flex; align-items: center; gap: 6px; padding: 12px 16px; background: rgba(255,255,255,0.06);">
-            <span style="width: 10px; height: 10px; border-radius: 50%; background: #FF5F56;"></span>
-            <span style="width: 10px; height: 10px; border-radius: 50%; background: #FFBD2E;"></span>
-            <span style="width: 10px; height: 10px; border-radius: 50%; background: #27C93F;"></span>
-            <span style="margin-left: 8px; font-size: 12px; color: rgba(255,255,255,0.5); font-family: var(--font-family-mono, monospace);">site.jsx</span>
-          </div>
-          <div style="padding: 20px 20px 28px; font-family: var(--font-family-mono, monospace); font-size: 13px; line-height: 1.8;">
-            <div><span style="color: #C586C0;">function</span><span style="color: #DCDCAA;"> buildSite</span><span style="color: rgba(255,255,255,0.8);">() {'{'}</span></div>
-            <div style="padding-left: 20px;"><span style="color: #C586C0;">const</span><span style="color: rgba(255,255,255,0.8);"> stack = [</span><span style="color: #CE9178;">'HTML'</span><span style="color: rgba(255,255,255,0.8);">, </span><span style="color: #CE9178;">'CSS'</span><span style="color: rgba(255,255,255,0.8);">, </span><span style="color: #CE9178;">'JS'</span><span style="color: rgba(255,255,255,0.8);">];</span></div>
-            <div style="padding-left: 20px; min-height: 1.8em;"><span style="color: #C586C0;">return</span><span style="color: rgba(255,255,255,0.8);"> {{ typedLine }}</span><span style="animation: blink-cursor 1s step-end infinite; color: rgba(255,255,255,0.6);">|</span></div>
-            <div><span style="color: rgba(255,255,255,0.8);">{'}'}</span></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== Services ===== -->
-  <sc-if value="{{ showServices }}" hint-placeholder-val="{{ true }}">
-    <section id="services" data-screen-label="Services" style="background: var(--bg-base); border-top: 1px solid var(--border-subtle); border-bottom: 1px solid var(--border-subtle); padding: 72px 0;">
-      <div style="max-width: 1248px; margin: 0 auto; padding: 0 32px; display: flex; flex-direction: column; gap: 32px;">
-        <div style="display: flex; flex-direction: column; gap: 4px;">
-          <span class="text-overline" style="color: var(--branded-color-primary);">Services</span>
-          <h2 style="margin: 0;">How I can help</h2>
-        </div>
-        <div style="display: flex; align-items: center; gap: 56px; flex-wrap: wrap;">
-          <div style="display: flex; flex-direction: column; flex: 1 1 480px; min-width: 0;">
-            <sc-for list="{{ services }}" as="sv" hint-placeholder-count="4">
-              <div style="display: flex; align-items: flex-start; gap: 24px; padding: 24px 0;">
-                <div style="width: 48px; height: 48px; flex: 0 0 auto; border-radius: 50%; background: var(--bg-muted); color: var(--branded-color-primary); display: inline-flex; align-items: center; justify-content: center;">
-                  <span class="ms" style="font-size: 22px;">{{ sv.icon }}</span>
-                </div>
-                <div style="display: flex; flex-direction: column; gap: 6px; flex: 1;">
-                  <h4 style="margin: 0; font-size: var(--type-h4-size); line-height: 1.4;">{{ sv.name }}</h4>
-                  <p style="margin: 0; font-size: var(--type-body2-size); line-height: var(--type-body2-line); color: var(--fg-2); max-width: 62ch;">{{ sv.desc }}</p>
-                </div>
-              </div>
-            </sc-for>
-          </div>
-          <div style="flex: 1 1 380px; min-width: 300px; display: flex; align-items: center; justify-content: center; position: relative; min-height: 320px; perspective: 1200px;" sc-camel-on-pointer-move="{{ onDragMove }}" sc-camel-on-pointer-leave="{{ onDragEnd }}">
-            <div style="width: 100%; max-width: 380px; height: 300px; position: relative; transform-style: preserve-3d; transform: {{ ringTransform }}; transition: transform 0.2s ease-out; border-radius: 20px; overflow: hidden; background: linear-gradient(155deg, #0F172A 0%, #1E293B 55%, #0B1120 100%); box-shadow: var(--elevation-400);">
-              <div style="position: absolute; inset: 0; background: radial-gradient(circle at 30% 20%, rgba(217,119,6,0.35), transparent 55%);"></div>
-              <div style="position: absolute; left: 24px; bottom: 24px; width: 60%; height: 70%; background: linear-gradient(180deg, #1E293B, #0F172A); border-radius: 10px; border: 1px solid rgba(255,255,255,0.08); box-shadow: 0 20px 40px rgba(0,0,0,0.5); transform: translateZ(30px);">
-                <div style="padding: 14px; display: flex; flex-direction: column; gap: 8px;">
-                  <div style="height: 8px; width: 40%; background: var(--branded-color-primary); border-radius: 3px; opacity: 0.9;"></div>
-                  <div style="height: 6px; width: 80%; background: rgba(255,255,255,0.15); border-radius: 3px;"></div>
-                  <div style="height: 6px; width: 65%; background: rgba(255,255,255,0.15); border-radius: 3px;"></div>
-                  <div style="height: 6px; width: 70%; background: rgba(255,255,255,0.1); border-radius: 3px;"></div>
-                </div>
-              </div>
-              <div style="position: absolute; right: 20px; top: 30px; width: 90px; height: 90px; border-radius: 50%; background: radial-gradient(circle at 35% 30%, #FDE68A, var(--branded-color-primary) 60%, #78350F); box-shadow: 0 0 40px rgba(217,119,6,0.6); transform: translateZ(70px); animation: pulse-glow 3.4s ease-in-out infinite;"></div>
-              <div style="position: absolute; left: 30%; top: 18%; width: 44px; height: 44px; border-radius: 10px; background: linear-gradient(160deg, rgba(255,255,255,0.9), rgba(255,255,255,0.4)); box-shadow: 0 12px 24px rgba(0,0,0,0.4); transform: translateZ(90px) rotate(12deg); animation: drift 6s ease-in-out infinite;"></div>
-              <div style="position: absolute; left: 55%; bottom: 20%; width: 30px; height: 30px; border-radius: 8px; background: linear-gradient(160deg, var(--branded-color-primary), #92400E); box-shadow: 0 10px 20px rgba(0,0,0,0.4); transform: translateZ(60px) rotate(-8deg); animation: drift 5s ease-in-out infinite 1s;"></div>
-              <div style="position: absolute; inset: 0; background: linear-gradient(115deg, rgba(255,255,255,0.08) 0%, transparent 30%);"></div>
+        <div class="hero-art" aria-hidden="true">
+          <div class="mock">
+            <div class="mock-bar"><span class="dot r"></span><span class="dot y"></span><span class="dot g"></span><span class="mock-url"></span></div>
+            <div class="mock-body">
+              <div class="blk blk-1"></div><div class="blk blk-2"></div><div class="blk blk-3"></div><div class="blk blk-4"></div><div class="blk blk-5"></div>
             </div>
           </div>
         </div>
       </div>
     </section>
-  </sc-if>
 
-  <!-- ===== Contact ===== -->
-  <section id="contact" data-screen-label="Contact" style="padding: 72px 0;">
-    <div style="max-width: 1248px; margin: 0 auto; padding: 0 32px;">
-      <div style="background: var(--branded-color-primary); color: var(--branded-color-primary-text); border-radius: var(--radius-card); padding: 64px 48px; display: flex; align-items: center; justify-content: space-between; gap: 32px; flex-wrap: wrap;">
-        <div style="display: flex; flex-direction: column; gap: 8px; max-width: 56ch;">
-          <h2 style="margin: 0; color: inherit;">Have a project in mind?</h2>
-          <p style="margin: 0; font-size: var(--type-body1-size); line-height: var(--type-body1-line); opacity: 0.9;">Tell me about it — I read every message and reply personally, usually within a day.</p>
+    <section class="values" aria-labelledby="values-title">
+      <div class="wrap">
+        <div class="section-head">
+          <span class="overline">One system, four parts</span>
+          <h2 id="values-title">How it all works together</h2>
         </div>
-        <div style="display: flex; align-items: center; gap: 12px; flex-wrap: wrap;">
-          <button sc-camel-on-click="{{ openChat }}" class="btn btn-lg" style="background: var(--bg-base); color: var(--branded-color-primary); border: none; cursor: pointer;">Start a project</button>
-          <a href="https://www.linkedin.com/in/hunter-tigert-35ba9b104" target="_blank" rel="noopener" class="btn btn-lg" style="background: rgba(255,255,255,0.16); color: #FFFFFF; text-decoration: none;">LinkedIn</a>
-          <a href="https://github.com/huntertigert" target="_blank" rel="noopener" class="btn btn-lg" style="background: rgba(255,255,255,0.16); color: #FFFFFF; text-decoration: none;">GitHub</a>
+        <ul class="value-list">
+          <li class="value">
+            <span class="value-icon"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-bolt"/></svg></span>
+            <h3 class="item-title">Fast, no bloat</h3>
+            <p class="body-2">Lean, performant builds — no heavy page-builder cruft slowing your site down.</p>
+          </li>
+          <li class="value">
+            <span class="value-icon"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-smart_toy"/></svg></span>
+            <h3 class="item-title">AI-integrated development</h3>
+            <p class="body-2">AI-assisted workflows speed up development, which means faster turnaround and lower cost for you.</p>
+          </li>
+          <li class="value">
+            <span class="value-icon"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-verified"/></svg></span>
+            <h3 class="item-title">Built to last</h3>
+            <p class="body-2">Clean, maintainable code that&#x27;s easy to hand off, extend, or update later.</p>
+          </li>
+          <li class="value">
+            <span class="value-icon"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-handshake"/></svg></span>
+            <h3 class="item-title">Direct communication</h3>
+            <p class="body-2">You work with me directly — no account managers, no relay delays.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="work" id="work" aria-labelledby="work-title">
+      <div class="wrap">
+        <div class="section-head">
+          <span class="overline">Selected work</span>
+          <h2 id="work-title">Recent projects</h2>
+        </div>
+        <div class="work-grid">
+        <article class="card project">
+          <div class="project-media">
+            <img src="images/projects/freshness-720.webp" srcset="images/projects/freshness-400.webp 400w, images/projects/freshness-720.webp 720w"
+                 sizes="(min-width: 1000px) 378px, (min-width: 700px) 45vw, 92vw" width="720" height="415" loading="lazy" decoding="async"
+                 alt="Screenshot of the Content Freshness Dashboard project">
+            <span class="badge">Web Application</span>
+          </div>
+          <div class="project-body">
+            <h3 class="item-title">Content Freshness Dashboard</h3>
+            <p class="body-2">A dashboard for tracking content freshness across SEO and AI search (GEO) performance.</p>
+            <ul class="tags" aria-label="Technologies"><li class="chip">TypeScript</li><li class="chip">Node</li></ul>
+            <div class="project-links">
+              <a class="btn btn-outline btn-sm" href="https://github.com/huntertigert/content-freshness-dashboard" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-code"/></svg> GitHub<span class="sr-only"> — Content Freshness Dashboard (opens in a new tab)</span></a>
+              
+            </div>
+          </div>
+        </article>
+        <article class="card project">
+          <div class="project-media">
+            <img src="images/projects/journal-720.webp" srcset="images/projects/journal-400.webp 400w, images/projects/journal-720.webp 720w"
+                 sizes="(min-width: 1000px) 378px, (min-width: 700px) 45vw, 92vw" width="720" height="451" loading="lazy" decoding="async"
+                 alt="Screenshot of the Travel Journal project">
+            <span class="badge">Structured Data usage in React</span>
+          </div>
+          <div class="project-body">
+            <h3 class="item-title">Travel Journal</h3>
+            <p class="body-2">A React app that dynamically builds a travel journal from structured trip data.</p>
+            <ul class="tags" aria-label="Technologies"><li class="chip">React</li><li class="chip">JavaScript</li><li class="chip">CSS</li></ul>
+            <div class="project-links">
+              <a class="btn btn-outline btn-sm" href="https://github.com/huntertigert/travel-journal" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-code"/></svg> GitHub<span class="sr-only"> — Travel Journal (opens in a new tab)</span></a>
+              <a class="btn btn-primary btn-sm" href="https://travel-journal-virid-gamma.vercel.app/" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-open_in_new"/></svg> View live<span class="sr-only"> — Travel Journal (opens in a new tab)</span></a>
+            </div>
+          </div>
+        </article>
+        <article class="card project">
+          <div class="project-media">
+            <img src="images/projects/summarizer-720.webp" srcset="images/projects/summarizer-400.webp 400w, images/projects/summarizer-720.webp 720w"
+                 sizes="(min-width: 1000px) 378px, (min-width: 700px) 45vw, 92vw" width="720" height="542" loading="lazy" decoding="async"
+                 alt="Screenshot of the Content Summarizer project">
+            <span class="badge">Web Application</span>
+          </div>
+          <div class="project-body">
+            <h3 class="item-title">Content Summarizer</h3>
+            <p class="body-2">A CLI tool powered by the Claude API that summarizes articles and generates ready-to-post social captions.</p>
+            <ul class="tags" aria-label="Technologies"><li class="chip">TypeScript</li><li class="chip">Claude API</li></ul>
+            <div class="project-links">
+              <a class="btn btn-outline btn-sm" href="https://github.com/huntertigert/content-summarizer" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-code"/></svg> GitHub<span class="sr-only"> — Content Summarizer (opens in a new tab)</span></a>
+              
+            </div>
+          </div>
+        </article>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ===== Footer ===== -->
-  <footer style="background: var(--platform-color-grayscale-100); color: var(--fg-2); padding: 24px 32px; margin-top: auto; font-size: var(--type-caption-size);">
-    <div style="max-width: 1248px; margin: 0 auto; display: flex; gap: 24px; align-items: center; flex-wrap: wrap;">
-      <span>© {{ year }} Hunter Tigert</span>
-      <a href="https://huntertigert.com" target="_blank" rel="noopener" style="color: var(--fg-2); text-decoration: none;" style-hover="text-decoration: underline;">huntertigert.com</a>
-      <span style="margin-left: auto; display: inline-flex; align-items: center; gap: 8px;">
-        <span class="ms" style="font-size: 14px;">location_on</span> Dallas, TX
-      </span>
+    <section class="section band" id="process" aria-labelledby="process-title">
+      <div class="wrap">
+        <div class="section-head">
+          <span class="overline">How it works</span>
+          <h2 id="process-title">A straightforward process</h2>
+        </div>
+        <ol class="steps">
+          <li class="step">
+            <span class="step-num" aria-hidden="true">01</span>
+            <h3 class="item-title">Discovery</h3>
+            <p class="body-2">We talk through goals, scope, and timeline before anything gets built.</p>
+          </li>
+          <li class="step">
+            <span class="step-num" aria-hidden="true">02</span>
+            <h3 class="item-title">Design</h3>
+            <p class="body-2">Layouts and direction, shaped around your brand and your users.</p>
+          </li>
+          <li class="step">
+            <span class="step-num" aria-hidden="true">03</span>
+            <h3 class="item-title">Build</h3>
+            <p class="body-2">Development in focused sprints, with progress you can see along the way.</p>
+          </li>
+          <li class="step">
+            <span class="step-num" aria-hidden="true">04</span>
+            <h3 class="item-title">Launch &amp; support</h3>
+            <p class="body-2">Deployed, tested, and backed by ongoing support if you need it.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section band" id="skills" aria-labelledby="skills-title">
+      <div class="wrap skills-inner">
+        <div class="skills-copy">
+          <div class="section-head">
+            <span class="overline">Capabilities</span>
+            <h2 id="skills-title">What that means for your project</h2>
+          </div>
+          <ul class="skill-grid">
+            <li class="skill">
+              <span class="skill-icon"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-design_services"/></svg></span>
+              <h3 class="skill-name">Pixel-perfect front-ends</h3>
+              <p class="body-2">Responsive pages, hand-coded in React and Tailwind or built on WordPress — whatever fits your project best.</p>
+            </li>
+            <li class="skill">
+              <span class="skill-icon"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-web"/></svg></span>
+              <h3 class="skill-name">Content you can manage</h3>
+              <p class="body-2">Sites built so you can update pages yourself, whether that&#x27;s a WordPress backend or a simple custom CMS.</p>
+            </li>
+            <li class="skill">
+              <span class="skill-icon"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-hub"/></svg></span>
+              <h3 class="skill-name">Connected marketing tools</h3>
+              <p class="body-2">Your site works cleanly with HubSpot, Salesforce, or Pardot — no manual data entry.</p>
+            </li>
+            <li class="skill">
+              <span class="skill-icon"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-bolt"/></svg></span>
+              <h3 class="skill-name">Automation that saves time</h3>
+              <p class="body-2">Background scripts and integrations that handle repetitive tasks for you.</p>
+            </li>
+          </ul>
+        </div>
+        <div class="skills-art" aria-hidden="true">
+          <span class="chip brand float-chip float-1">React</span>
+          <span class="chip brand float-chip float-2">TypeScript</span>
+          <span class="chip brand float-chip float-3">WordPress</span>
+          <div class="code-card">
+            <div class="code-bar"><span class="dot r"></span><span class="dot y"></span><span class="dot g"></span><span>site.jsx</span></div>
+            <div class="code">
+              <div><span class="k">function</span><span class="f"> buildSite</span>() {</div>
+              <div class="in"><span class="k">const</span> stack = [<span class="s">'HTML'</span>, <span class="s">'CSS'</span>, <span class="s">'JS'</span>];</div>
+              <div class="in ret"><span class="k">return</span> <span id="typed">&lt;Website fast optimized /&gt;;</span><span class="caret">|</span></div>
+              <div>}</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section band" id="services" aria-labelledby="services-title">
+      <div class="wrap">
+        <div class="section-head">
+          <span class="overline">Services</span>
+          <h2 id="services-title">How I can help</h2>
+        </div>
+        <div class="services-inner">
+          <ul class="service-list">
+            <li class="service">
+              <span class="service-icon"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-code"/></svg></span>
+              <div class="service-text">
+                <h3 class="item-title">Custom-built websites</h3>
+                <p class="body-2">Hand-coded with React and Tailwind, or built on WordPress when a content platform fits better — whichever gets your project done right.</p>
+              </div>
+            </li>
+            <li class="service">
+              <span class="service-icon"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-design_services"/></svg></span>
+              <div class="service-text">
+                <h3 class="item-title">Design and development</h3>
+                <p class="body-2">Responsive sites designed and built from scratch, tailored to your brand and timeline.</p>
+              </div>
+            </li>
+            <li class="service">
+              <span class="service-icon"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-build"/></svg></span>
+              <div class="service-text">
+                <h3 class="item-title">Support and maintenance</h3>
+                <p class="body-2">Routine maintenance, hosting, and ongoing support so your site stays fast and secure, on any platform.</p>
+              </div>
+            </li>
+            <li class="service">
+              <span class="service-icon"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-smart_toy"/></svg></span>
+              <div class="service-text">
+                <h3 class="item-title">AI-accelerated builds</h3>
+                <p class="body-2">AI-integrated development speeds up build time without cutting corners, so you get a faster turnaround at a lower cost.</p>
+              </div>
+            </li>
+          </ul>
+          <div class="ring-stage" id="ring-stage" aria-hidden="true">
+            <div class="ring">
+              <div class="ring-glow"></div>
+              <div class="ring-panel"><i></i><i></i><i></i><i></i></div>
+              <div class="ring-sun"></div>
+              <div class="ring-cube-1"></div>
+              <div class="ring-cube-2"></div>
+              <div class="ring-shine"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section faq" id="faq" aria-labelledby="faq-title">
+      <div class="wrap">
+        <div class="section-head">
+          <span class="overline">FAQ</span>
+          <h2 id="faq-title">Frequently asked questions</h2>
+        </div>
+        <div class="faq-list">
+          <details>
+            <summary>What kind of websites do you build?</summary>
+            <p>I design and build fast, responsive websites and web applications, from fully custom React and Tailwind builds to WordPress sites and marketing platform integrations.</p>
+          </details>
+          <details>
+            <summary>Do you build WordPress websites?</summary>
+            <p>Yes. I build WordPress sites when a content platform fits your project better than a custom build, including setups where you can update pages yourself through the WordPress backend. When a custom build is the better fit, I hand-code it with React and Tailwind.</p>
+          </details>
+          <details>
+            <summary>Do you work with HubSpot?</summary>
+            <p>Yes. I connect websites with HubSpot, Salesforce, and Pardot so forms, leads, and data flow into your marketing tools without manual data entry.</p>
+          </details>
+          <details>
+            <summary>Where are you located?</summary>
+            <p>I am a web developer based in Rockwall, Texas. You work with me directly, with no account managers and no relay delays.</p>
+          </details>
+          <details>
+            <summary>What is your process?</summary>
+            <p>Every project follows four steps: discovery (goals, scope, and timeline), design (layouts and direction shaped around your brand and users), build (focused sprints with progress you can see), and launch and support (deployed, tested, and backed by ongoing support if you need it).</p>
+          </details>
+          <details>
+            <summary>Can I update the website myself?</summary>
+            <p>Yes. Sites are built so you can update pages yourself, whether that&#x27;s through a WordPress backend or a simple custom CMS.</p>
+          </details>
+          <details>
+            <summary>Do you offer support after launch?</summary>
+            <p>Yes. I offer routine maintenance, hosting, and ongoing support so your site stays fast and secure, on any platform.</p>
+          </details>
+          <details>
+            <summary>Do you use AI in your development work?</summary>
+            <p>Yes. AI-assisted workflows speed up development, which means a faster turnaround and lower cost for you, without cutting corners on quality.</p>
+          </details>
+          <details>
+            <summary>How much does a website cost and how long does it take?</summary>
+            <p>Pricing and timelines depend on the scope of the project, so I don&#x27;t publish fixed rates. Tell me about your project and I will reply personally, usually within a day, with next steps.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact" aria-labelledby="contact-title">
+      <div class="wrap">
+        <div class="contact-card">
+          <div class="contact-copy">
+            <h2 id="contact-title">Have a project in mind?</h2>
+            <p>Tell me about it — I read every message and reply personally, usually within a day.</p>
+            <address>Email <a href="mailto:tigertdevelopment@gmail.com?subject=Project%20inquiry">tigertdevelopment@gmail.com</a> · Rockwall, TX</address>
+          </div>
+          <div class="actions">
+            <a class="btn btn-lg btn-solid" href="mailto:tigertdevelopment@gmail.com?subject=Project%20inquiry"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-mail"/></svg> Email me</a>
+            <a class="btn btn-lg btn-ghost" href="https://www.linkedin.com/in/hunter-tigert-35ba9b104" target="_blank" rel="noopener">LinkedIn<span class="sr-only"> (opens in a new tab)</span></a>
+            <a class="btn btn-lg btn-ghost" href="https://github.com/huntertigert" target="_blank" rel="noopener">GitHub<span class="sr-only"> (opens in a new tab)</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <span>© 2026 Hunter Tigert</span>
+      <a href="https://www.huntertigert.com/">huntertigert.com</a>
+      <span class="footer-loc"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-location_on"/></svg> Rockwall, TX</span>
     </div>
   </footer>
 
-  <!-- ===== Project modal ===== -->
-  <sc-if value="{{ activeProject }}" hint-placeholder-val="{{ false }}">
-    <div sc-camel-on-click="{{ closeProjectModal }}" style="position: fixed; inset: 0; z-index: 50; background: rgba(0,0,0,0.55); display: flex; align-items: center; justify-content: center; padding: 24px;">
-      <div sc-camel-on-click="{{ stopPropagation }}" class="card no-pad" style="max-width: 560px; width: 100%; max-height: 90vh; overflow-y: auto; display: flex; flex-direction: column;">
-        <div style="height: 220px; position: relative; background: var(--platform-color-grayscale-900); flex: 0 0 auto;">
-          <image-slot id="modal-project-image" shape="rect" placeholder="Project screenshot" src="{{ activeProject.image }}" style="width: 100%; height: 100%;"></image-slot>
-          <div style="position: absolute; inset: 0; background: linear-gradient(180deg, color-mix(in srgb, var(--branded-color-primary) 12%, transparent) 0%, transparent 40%, color-mix(in srgb, var(--bg-base) 70%, transparent) 100%);"></div>
-          <span style="position: absolute; top: 14px; left: 14px; font-size: 11px; font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase; color: #FFFFFF; background: color-mix(in srgb, var(--branded-color-primary) 85%, black); padding: 4px 10px; border-radius: 999px;">{{ activeProject.kind }}</span>
-          <button sc-camel-on-click="{{ closeProjectModal }}" aria-label="Close" style="position: absolute; top: 12px; right: 12px; width: 32px; height: 32px; border-radius: 50%; background: rgba(0,0,0,0.4); color: #FFFFFF; border: none; cursor: pointer; display: flex; align-items: center; justify-content: center;">
-            <span class="ms" style="font-size: 18px;">close</span>
-          </button>
-        </div>
-        <div style="padding: 28px; display: flex; flex-direction: column; gap: 16px;">
-          <h3 style="margin: 0; font-size: var(--type-h3-size); line-height: 1.3;">{{ activeProject.title }}</h3>
-          <p style="margin: 0; font-size: var(--type-body1-size); line-height: var(--type-body1-line); color: var(--fg-2);">{{ activeProject.desc }}</p>
-          <div style="display: flex; gap: 8px; flex-wrap: wrap;">
-            <sc-for list="{{ activeProject.tags }}" as="t" hint-placeholder-count="2">
-              <span class="chip brand">{{ t }}</span>
-            </sc-for>
-          </div>
-          <div style="display: flex; gap: 12px; flex-wrap: wrap; margin-top: 8px;">
-            <a href="{{ activeProject.url }}" target="_blank" rel="noopener" class="btn btn-outlined btn-md" style="text-decoration: none; display: inline-flex; align-items: center; gap: 8px;">
-              <span class="ms" style="font-size: 18px;">code</span> GitHub
-            </a>
-            <sc-if value="{{ activeProject.liveUrl }}" hint-placeholder-val="{{ false }}">
-              <a href="{{ activeProject.liveUrl }}" target="_blank" rel="noopener" class="btn btn-primary btn-md" style="text-decoration: none; display: inline-flex; align-items: center; gap: 8px;">
-                <span class="ms" style="font-size: 18px;">open_in_new</span> View live
-              </a>
-            </sc-if>
-          </div>
-        </div>
-      </div>
-    </div>
-  </sc-if>
-
-  <!-- ===== Chat launcher ===== -->
-  <button sc-camel-on-click="{{ toggleChat }}" style="position: fixed; bottom: 24px; right: 24px; z-index: 40; width: 56px; height: 56px; border-radius: 50%; background: var(--branded-color-primary); color: var(--branded-color-primary-text); border: none; box-shadow: var(--elevation-300); cursor: pointer; display: flex; align-items: center; justify-content: center;">
-    <span class="ms" style="font-size: 26px;">{{ launcherIcon }}</span>
-  </button>
-
-  <!-- ===== Chat panel ===== -->
-  <sc-if value="{{ chatOpen }}" hint-placeholder-val="{{ false }}">
-    <div class="card" style="position: fixed; bottom: 92px; right: 24px; z-index: 40; width: 360px; max-width: calc(100vw - 32px); height: 480px; max-height: calc(100vh - 140px); display: flex; flex-direction: column; overflow: hidden; padding: 0; box-shadow: var(--elevation-400);">
-      <div style="background: var(--branded-color-primary); color: var(--branded-color-primary-text); padding: 16px 20px; display: flex; align-items: center; gap: 10px;">
-        <img src="images/hunter-tigert.png" alt="Hunter" style="width: 28px; height: 28px; border-radius: 50%; object-fit: cover;">
-        <div style="display: flex; flex-direction: column; line-height: 1.3;">
-          <span style="font-weight: 700; font-size: 14px;">Project inquiry</span>
-          <span style="font-size: 12px; opacity: 0.85;">Usually replies within a day</span>
-        </div>
-        <button sc-camel-on-click="{{ toggleChat }}" style="margin-left: auto; background: none; border: none; color: inherit; cursor: pointer; display: flex;">
-          <span class="ms" style="font-size: 20px;">close</span>
-        </button>
-      </div>
-      <div ref="{{ scrollRef }}" style="flex: 1; overflow-y: auto; padding: 16px; display: flex; flex-direction: column; gap: 10px; background: var(--bg-muted);">
-        <sc-for list="{{ messages }}" as="m" hint-placeholder-count="1">
-          <div style="display: flex; {{ m.rowStyle }}">
-            <div style="{{ m.bubbleStyle }}">{{ m.text }}</div>
-          </div>
-        </sc-for>
-        <sc-if value="{{ isDone }}" hint-placeholder-val="{{ false }}">
-          <div class="card pad-md flat" style="background: var(--bg-base); display: flex; flex-direction: column; gap: 10px; margin-top: 4px;">
-            <span style="font-size: 13px; color: var(--fg-2);">Ready to send this to Hunter's inbox:</span>
-            <a href="{{ mailtoHref }}" class="btn btn-primary btn-sm" style="text-decoration: none; text-align: center;">Send via email</a>
-            <button sc-camel-on-click="{{ resetChat }}" style="background: none; border: none; color: var(--fg-2); font-size: 12px; cursor: pointer; text-decoration: underline; padding: 0;">Start over</button>
-          </div>
-        </sc-if>
-      </div>
-      <sc-if value="{{ showInput }}" hint-placeholder-val="{{ true }}">
-        <div style="display: flex; gap: 8px; padding: 12px; border-top: 1px solid var(--border-subtle); background: var(--bg-base);">
-          <input type="{{ inputType }}" value="{{ inputValue }}" sc-camel-on-change="{{ onInputChange }}" sc-camel-on-key-down="{{ onInputKeyDown }}" placeholder="{{ inputPlaceholder }}" style="flex: 1; border: 1px solid var(--border-subtle); border-radius: var(--radius-soft); padding: 10px 12px; font-size: 14px; outline: none;">
-          <button sc-camel-on-click="{{ handleSend }}" style="background: var(--branded-color-primary); color: var(--branded-color-primary-text); border: none; border-radius: var(--radius-soft); width: 40px; display: flex; align-items: center; justify-content: center; cursor: pointer;">
-            <span class="ms" style="font-size: 18px;">send</span>
-          </button>
-        </div>
-      </sc-if>
-    </div>
-  </sc-if>
-
-</div>
-
-</x-dc>
-<script type="text/x-dc" data-dc-script="" data-props="{
-  &quot;showServices&quot;: { &quot;editor&quot;: &quot;boolean&quot;, &quot;default&quot;: true, &quot;tsType&quot;: &quot;boolean&quot;, &quot;section&quot;: &quot;Content&quot; },
-  &quot;projectCount&quot;: { &quot;editor&quot;: &quot;int&quot;, &quot;default&quot;: 3, &quot;min&quot;: 2, &quot;max&quot;: 3, &quot;tsType&quot;: &quot;number&quot;, &quot;section&quot;: &quot;Content&quot; }
-}">
-const STEPS = ["name", "email", "message", "done"];
-const PROMPTS = {
-  name: "Hi, I'm Hunter's assistant. What's your name?",
-  email: "Thanks! What's the best email to reach you at?",
-  message: "Got it. Tell me a bit about your project.",
-  done: null
-};
-const PLACEHOLDERS = { name: "Your name", email: "you@company.com", message: "What do you need built?" };
-
-function bubble(text, fromBot) {
-  return {
-    text,
-    rowStyle: fromBot ? "justify-content: flex-start;" : "justify-content: flex-end;",
-    bubbleStyle: fromBot
-      ? "background: var(--bg-base); color: var(--fg-1); border: 1px solid var(--border-subtle); border-radius: 14px 14px 14px 4px; padding: 10px 14px; font-size: 14px; line-height: 1.4; max-width: 84%;"
-      : "background: var(--branded-color-primary); color: var(--branded-color-primary-text); border-radius: 14px 14px 4px 14px; padding: 10px 14px; font-size: 14px; line-height: 1.4; max-width: 84%;"
-  };
-}
-
-const CODE_LINE = "<Website fast optimized />;";
-
-class Component extends DCLogic {
-  scrollRef = React.createRef();
-  servicesRef = React.createRef();
-  state = {
-    chatOpen: false,
-    darkMode: true,
-    activeProject: null,
-    ringYaw: 0,
-    ringPitch: -6,
-    scrollProgress: 0,
-    typed: "",
-    step: "name",
-    lead: { name: "", email: "", message: "" },
-    inputValue: "",
-    messages: [bubble(PROMPTS.name, true)]
-  };
-
-  componentDidMount() {
-    this.runTyping();
-    this.syncTheme();
-  }
-
-  componentWillUnmount() {
-    clearTimeout(this.typeTimer);
-  }
-
-  syncTheme = () => {
-    document.body.setAttribute("data-theme", this.state.darkMode ? "dark" : "light");
-  };
-
-  runTyping = () => {
-    let i = 0;
-    const tick = () => {
-      i++;
-      this.setState({ typed: CODE_LINE.slice(0, i) });
-      if (i < CODE_LINE.length) {
-        this.typeTimer = setTimeout(tick, 55);
-      } else {
-        this.typeTimer = setTimeout(() => {
-          this.setState({ typed: "" });
-          this.typeTimer = setTimeout(tick, 400);
-          i = 0;
-        }, 2200);
-      }
-    };
-    this.typeTimer = setTimeout(tick, 400);
-  };
-
-  toggleDarkMode = () => this.setState(s => ({ darkMode: !s.darkMode }), this.syncTheme);
-
-  openProjectModal = (p) => this.setState({ activeProject: p });
-  closeProjectModal = () => this.setState({ activeProject: null });
-  stopPropagation = (e) => e.stopPropagation();
-
-  onDragMove = (e) => {
-    const rect = e.currentTarget.getBoundingClientRect();
-    const px = (e.clientX - rect.left) / rect.width - 0.5;
-    const py = (e.clientY - rect.top) / rect.height - 0.5;
-    this.setState({ ringYaw: px * 24, ringPitch: -py * 18 });
-  };
-  onDragEnd = () => this.setState({ ringYaw: 0, ringPitch: -6 });
-
-  componentDidUpdate() {
-    const el = this.scrollRef.current;
-    if (el) el.scrollTop = el.scrollHeight;
-  }
-
-  toggleChat = () => this.setState(s => ({ chatOpen: !s.chatOpen }));
-  openChat = () => this.setState({ chatOpen: true });
-
-  onInputChange = (e) => this.setState({ inputValue: e.target.value });
-  onInputKeyDown = (e) => { if (e.key === "Enter") this.handleSend(); };
-
-  handleSend = () => {
-    const val = this.state.inputValue.trim();
-    if (!val) return;
-    const step = this.state.step;
-    if (step === "email" && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(val)) {
-      this.setState(s => ({
-        messages: [...s.messages, bubble(val, false), bubble("That doesn't look like a valid email — mind double-checking it?", true)],
-        inputValue: ""
-      }));
-      return;
-    }
-    const lead = { ...this.state.lead, [step]: val };
-    const idx = STEPS.indexOf(step);
-    const nextStep = STEPS[idx + 1];
-    const newMessages = [...this.state.messages, bubble(val, false)];
-    if (nextStep && nextStep !== "done") newMessages.push(bubble(PROMPTS[nextStep], true));
-    if (nextStep === "done") newMessages.push(bubble(`Thanks, ${lead.name}! I've put this together for Hunter below.`, true));
-    this.setState({ lead, step: nextStep || "done", messages: newMessages, inputValue: "" });
-  };
-
-  resetChat = () => this.setState({
-    step: "name",
-    lead: { name: "", email: "", message: "" },
-    inputValue: "",
-    messages: [bubble(PROMPTS.name, true)]
-  });
-
-  renderVals() {
-    const allProjects = [
-      { slotId: "proj-1", title: "Content Freshness Dashboard", desc: "A dashboard for tracking content freshness across SEO and AI search (GEO) performance.", tags: ["TypeScript", "Node"], url: "https://github.com/huntertigert/content-freshness-dashboard", image: (window.PROJECT_IMAGES && window.PROJECT_IMAGES.freshness) || "assets/proj-journal.png", kind: "Web Application", liveUrl: null },
-      { slotId: "proj-2", title: "Travel Journal", desc: "A React app that dynamically builds a travel journal from structured trip data.", tags: ["React", "JavaScript", "CSS"], url: "https://github.com/huntertigert/travel-journal", image: (window.PROJECT_IMAGES && window.PROJECT_IMAGES.journal) || "assets/proj-freshness.png", kind: "Structured Data usage in React", liveUrl: "https://travel-journal-virid-gamma.vercel.app/" },
-      { slotId: "proj-3", title: "Content Summarizer", desc: "A CLI tool powered by the Claude API that summarizes articles and generates ready-to-post social captions.", tags: ["TypeScript", "Claude API"], url: "https://github.com/huntertigert/content-summarizer", image: (window.PROJECT_IMAGES && window.PROJECT_IMAGES.summarizer) || "assets/proj-summarizer.png", kind: "Web Application", liveUrl: null }
-    ];
-    const count = Math.max(2, Math.min(3, this.props.projectCount ?? 3));
-    const openModal = (p) => this.openProjectModal(p);
-    const isDone = this.state.step === "done";
-    const lead = this.state.lead;
-    const mailtoHref = "mailto:tigertdevelopment@gmail.com" +
-      "?subject=" + encodeURIComponent("New project inquiry from " + lead.name) +
-      "&body=" + encodeURIComponent("Name: " + lead.name + "\nEmail: " + lead.email + "\n\n" + lead.message);
-
-    return {
-      theme: this.state.darkMode ? "dark" : "light",
-      darkModeIcon: this.state.darkMode ? "light_mode" : "dark_mode",
-      toggleDarkMode: this.toggleDarkMode,
-      typedLine: this.state.typed,
-      ringTransform: "rotateX(" + this.state.ringPitch + "deg) rotateY(" + this.state.ringYaw + "deg)",
-      onDragStart: this.onDragStart,
-      onDragMove: this.onDragMove,
-      onDragEnd: this.onDragEnd,
-      floatingTags: [
-        { label: "React", style: "position: absolute; top: 6%; left: 2%; animation: float-chip 4s ease-in-out infinite;" },
-        { label: "TypeScript", style: "position: absolute; bottom: 10%; left: -2%; animation: float-chip 5s ease-in-out infinite 0.5s;" },
-        { label: "WordPress", style: "position: absolute; top: 12%; right: 0%; animation: float-chip 4.5s ease-in-out infinite 1s;" }
-      ],
-      chatOpen: this.state.chatOpen,
-      launcherIcon: this.state.chatOpen ? "close" : "chat",
-      messages: this.state.messages,
-      isDone,
-      showInput: !isDone,
-      inputType: this.state.step === "email" ? "email" : "text",
-      inputValue: this.state.inputValue,
-      inputPlaceholder: PLACEHOLDERS[this.state.step] || "",
-      onInputChange: this.onInputChange,
-      onInputKeyDown: this.onInputKeyDown,
-      handleSend: this.handleSend,
-      toggleChat: this.toggleChat,
-      openChat: this.openChat,
-      resetChat: this.resetChat,
-      mailtoHref,
-      scrollRef: this.scrollRef,
-      projects: allProjects.slice(0, count).map(p => ({ ...p, openModal: () => openModal(p) })),
-      activeProject: this.state.activeProject,
-      closeProjectModal: this.closeProjectModal,
-      stopPropagation: this.stopPropagation,
-      valueProps: [
-        { icon: "bolt", title: "Fast, no bloat", desc: "Lean, performant builds — no heavy page-builder cruft slowing your site down." },
-        { icon: "smart_toy", title: "AI-integrated development", desc: "AI-assisted workflows speed up development, which means faster turnaround and lower cost for you." },
-        { icon: "verified", title: "Built to last", desc: "Clean, maintainable code that's easy to hand off, extend, or update later." },
-        { icon: "handshake", title: "Direct communication", desc: "You work with me directly — no account managers, no relay delays." }
-      ],
-      steps: [
-        { num: "01", title: "Discovery", desc: "We talk through goals, scope, and timeline before anything gets built." },
-        { num: "02", title: "Design", desc: "Layouts and direction, shaped around your brand and your users." },
-        { num: "03", title: "Build", desc: "Development in focused sprints, with progress you can see along the way." },
-        { num: "04", title: "Launch & support", desc: "Deployed, tested, and backed by ongoing support if you need it." }
-      ],
-      skillGroups: [
-        { name: "Pixel-perfect front-ends", icon: "design_services", desc: "Responsive pages, hand-coded in React and Tailwind or built on WordPress — whatever fits your project best." },
-        { name: "Content you can manage", icon: "web", desc: "Sites built so you can update pages yourself, whether that's a WordPress backend or a simple custom CMS." },
-        { name: "Connected marketing tools", icon: "hub", desc: "Your site works cleanly with HubSpot, Salesforce, or Pardot — no manual data entry." },
-        { name: "Automation that saves time", icon: "bolt", desc: "Background scripts and integrations that handle repetitive tasks for you." }
-      ],
-      services: [
-        { name: "Custom-built websites", icon: "code", desc: "Hand-coded with React and Tailwind, or built on WordPress when a content platform fits better — whichever gets your project done right." },
-        { name: "Design and development", icon: "design_services", desc: "Responsive sites designed and built from scratch, tailored to your brand and timeline." },
-        { name: "Support and maintenance", icon: "build", desc: "Routine maintenance, hosting, and ongoing support so your site stays fast and secure, on any platform." },
-        { name: "AI-accelerated builds", icon: "smart_toy", desc: "AI-integrated development speeds up build time without cutting corners, so you get a faster turnaround at a lower cost." }
-      ],
-      showServices: this.props.showServices ?? true,
-      year: new Date().getFullYear()
-    };
-  }
-}
-
-</script>
-
-
-</body></html>
+  <script src="js/main.js" defer></script>
+  <script src="/_vercel/insights/script.js" defer></script>
+  <script src="/_vercel/speed-insights/script.js" defer></script>
+</body>
+</html>
