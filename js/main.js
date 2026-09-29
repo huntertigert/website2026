@@ -3,10 +3,41 @@
   var root = document.documentElement;
   var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
-  /* ---- Email link: address is not in the HTML, it is assembled here to keep it away from scrapers ---- */
+  /* ---- Email link ----
+     The address is not in the HTML (keeps it from scrapers); it is assembled here.
+     If no mail app takes the mailto: link, reveal a fallback with the address after a click. */
   var mail = document.getElementById("email-link");
+  var fb = document.getElementById("mail-fallback");
   if (mail && mail.dataset.m) {
-    try { mail.href = "mailto:" + atob(mail.dataset.m) + "?subject=Project%20inquiry"; mail.removeAttribute("data-m"); } catch (e) {}
+    var addr = "";
+    try { addr = atob(mail.dataset.m); } catch (e) {}
+    if (addr) {
+      var subject = "Project%20inquiry";
+      mail.href = "mailto:" + addr + "?subject=" + subject;
+      mail.removeAttribute("data-m");
+      if (fb) {
+        mail.addEventListener("click", function () {
+          var left = false;
+          var mark = function () { left = true; };
+          window.addEventListener("blur", mark, { once: true });
+          document.addEventListener("visibilitychange", mark, { once: true });
+          setTimeout(function () {
+            window.removeEventListener("blur", mark);
+            document.removeEventListener("visibilitychange", mark);
+            if (left || !fb.hidden) return;
+            document.getElementById("mail-address").textContent = addr;
+            document.getElementById("mail-gmail").href =
+              "https://mail.google.com/mail/?view=cm&fs=1&to=" + encodeURIComponent(addr) + "&su=" + subject;
+            fb.hidden = false;
+          }, 1500);
+        });
+        var copy = document.getElementById("mail-copy");
+        copy.addEventListener("click", function () {
+          var done = function () { copy.textContent = "Copied!"; setTimeout(function () { copy.textContent = "Copy address"; }, 2000); };
+          if (navigator.clipboard && navigator.clipboard.writeText) { navigator.clipboard.writeText(addr).then(done, function () {}); }
+        });
+      }
+    }
   }
 
   /* ---- Theme toggle (initial theme is set by the inline script in <head>) ---- */

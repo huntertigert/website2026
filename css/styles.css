@@ -343,6 +343,9 @@ h2 { font-size: 2.125rem; line-height: 2.5rem; font-weight: 700; letter-spacing:
 .contact .btn-solid { background: var(--bg-base); color: var(--primary); }
 .contact .btn-solid:hover { background: var(--surface); }
 .contact .btn-ghost { background: transparent; color: inherit; border: 2px solid currentColor; }
+.mail-fallback { margin-top: 12px; padding-top: 12px; border-top: 1px solid currentColor; display: flex; flex-direction: column; gap: 8px; }
+.mail-fallback[hidden] { display: none; }
+.mail-fallback strong { font-size: 1.125rem; word-break: break-all; }
 .contact .btn-ghost:hover { background: rgb(255 255 255 / .12); }
 :root[data-theme="dark"] .contact .btn-ghost:hover { background: rgb(0 0 0 / .1); }
 
