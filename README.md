@@ -1,39 +1,28 @@
 # Hunter Tigert — Portfolio
 
-Static site, unpacked from the single-file `huntertigert-standalone.html` bundle. No build step: upload the folder to any static host (Netlify, Vercel, GitHub Pages, S3, cPanel, etc.) or open `index.html` directly.
+Plain static site (HTML, CSS and a small script). No framework and no build step. Deployed on Vercel from `main`.
 
 ```
-index.html                 Page markup + page logic (the inline <script type="text/x-dc">)
-css/
-  site.css                 Site colors / theme variables (light + dark)
-  iris-tokens.css          Design-system tokens, type, Roboto @font-face
-  iris-theme.css           Design-system theme styles
-  iris-preview-base.css    Design-system base component styles
-  alkami-icons.css         Alkami icon font classes
-  material-symbols.css     Material Symbols icon font
-js/
-  dc-runtime.js            Renders the <x-dc> template with React
-  iris-design-system.js    Design-system components
-  image-slot.js            <image-slot> element
-  project-images.js        Paths to the project card images
-  vendor/                  React 18.3.1 + ReactDOM (served locally, no CDN needed)
-fonts/                     Roboto, Roboto Mono, Alkami, Material Symbols (.woff2)
-images/
-  hunter-tigert.png        Headshot (also used as favicon)
-  projects/                Project card screenshots
+index.html          All page content, meta tags, and JSON-LD structured data
+css/styles.css      All styles. Colors and theme values are at the top (:root)
+js/main.js          Dark-mode toggle, typing effect, 3D tilt (optional; page works without it)
+fonts/              Roboto (Latin, variable) — the only font
+images/             Portrait, project screenshots (WebP), social share image
+favicon.svg/.ico, apple-touch-icon.png
+robots.txt, sitemap.xml, llms.txt
+vercel.json         Security headers and caching
 ```
 
 ## Editing
 
-- **Text, sections, layout:** the markup inside `<x-dc>` in `index.html`. `{{ ... }}` are template bindings.
-- **Behavior (chat widget, dark mode, project list):** the `class Component` script at the bottom of `index.html`.
-  It has to stay inline, because the runtime reads it from the page.
-- **Brand colors:** `css/site.css` (`--branded-color-primary` and others).
-- **Project images:** replace the files in `images/projects/`, or change the paths in `js/project-images.js`.
+- **Text and sections:** edit `index.html` directly.
+- **Colors / fonts / spacing:** `css/styles.css`. Light and dark values are the `:root` and `:root[data-theme="dark"]` blocks.
+- **Adding a project:** copy an `<article class="card project">` block, add 400px and 720px wide WebP screenshots to `images/projects/`, and add the project to the `ItemList` in the JSON-LD block.
+- **FAQ:** each `<details>` in `#faq` must also exist in the `FAQPage` JSON-LD in the `<head>` (same wording), so search and AI engines see the same answers users do.
+- **Inline theme script:** the small `<script>` in the `<head>` is allowed by a SHA-256 hash in the Content-Security-Policy in `vercel.json`. If you edit that script, update the hash (`echo -n '<script text>' | openssl dgst -sha256 -binary | base64`).
 
 ## Notes
 
-- The Material Symbols fonts are about 17 MB in total, because each one is the full icon set. The page only uses
-  a few icons, so you can reduce them a lot with a subset from Google Fonts (`&icon_names=...`) if page weight matters.
-- The browser console can show two harmless 404s for `{{ p.image }}`. The browser requests the raw template's
-  `<img>` tags before the runtime fills in the bindings.
+- Vercel Web Analytics and Speed Insights scripts are included. Enable both in the Vercel dashboard (project → Analytics / Speed Insights) — until then, `/_vercel/...` returns 404 (harmless).
+- Contact is a `mailto:` link. The address is stored base64-encoded in `data-m` on `#email-link` and turned into the link by `js/main.js`, so it isn't in the page HTML, structured data, or `llms.txt`. To change it: `echo -n 'you@example.com' | base64`.
+- The original single-file bundle version is in this repo's git history.
