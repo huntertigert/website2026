@@ -24,5 +24,5 @@ vercel.json         Security headers and caching
 ## Notes
 
 - Vercel Web Analytics and Speed Insights scripts are included. Enable both in the Vercel dashboard (project → Analytics / Speed Insights) — until then, `/_vercel/...` returns 404 (harmless).
-- Contact is a form that posts to Formspree (`#contact-form`). Set the endpoint in the form's `action` (`https://formspree.io/f/<form id>`); the destination email lives in the Formspree dashboard, never in this repo. The CSP in `vercel.json` only allows posts to `formspree.io`.
+- Contact is a `mailto:` link. The address is stored base64-encoded in `data-m` on `#email-link` and turned into the link by `js/main.js`, so it isn't in the page HTML, structured data, or `llms.txt`. To change it: `echo -n 'you@example.com' | base64`.
 - The original single-file bundle version is in this repo's git history.

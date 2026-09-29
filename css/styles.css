@@ -41,7 +41,6 @@
   --fg-2: #57534E;
   --border: #E7E5E4;
   --border-strong: #CCCCCC;
-  --input-border: #78716C;
   --chip-bg: #F2F2F2;
   --footer-bg: #F5F5F4;
   --media-bg: #292524;
@@ -69,7 +68,6 @@
   --fg-2: #C2C6CD;
   --border: #2B2E36;
   --border-strong: #2B2E36;
-  --input-border: #8A909C;
   --chip-bg: #202329;
   --footer-bg: #2B2E36;
   --media-bg: #292524;
@@ -339,31 +337,9 @@ h2 { font-size: 2.125rem; line-height: 2.5rem; font-weight: 700; letter-spacing:
   background: var(--primary); color: var(--primary-text);
 }
 .contact-card :focus-visible { outline-color: var(--primary-text); }
-.contact-card { align-items: flex-start; }
-.contact-copy { flex: 1 1 320px; display: flex; flex-direction: column; gap: 8px; max-width: 56ch; }
-.contact-copy .actions { margin-top: 16px; }
-.contact-form {
-  flex: 1 1 380px; max-width: 520px; display: flex; flex-direction: column; gap: 16px;
-  padding: 24px; border-radius: var(--radius); box-shadow: var(--shadow-300);
-  background: var(--bg-base); color: var(--fg-1);
-}
-.field { display: flex; flex-direction: column; gap: 6px; }
-.field label { font-size: .875rem; font-weight: 500; color: var(--fg-2); letter-spacing: .01563rem; }
-.field input, .field textarea {
-  width: 100%; padding: 12px 14px; font: inherit; font-size: 1rem; letter-spacing: normal;
-  color: var(--fg-1); background: var(--surface); border: 1px solid var(--input-border); border-radius: var(--radius);
-}
-.field textarea { resize: vertical; min-height: 120px; }
-.field input:focus, .field textarea:focus { border-color: var(--primary); box-shadow: 0 0 0 1px var(--primary); outline: none; }
-.field input:focus-visible, .field textarea:focus-visible { outline: 3px solid var(--primary); outline-offset: 2px; }
-.contact-form :focus-visible { outline-color: var(--primary); }
-.contact-form .btn { width: 100%; }
-.contact-form .btn:disabled { opacity: .7; cursor: progress; }
-.hp { position: absolute; left: -10000px; width: 1px; height: 1px; overflow: hidden; }
-.form-status { min-height: 1.5rem; font-size: .875rem; font-weight: 500; }
-.form-status.ok { color: var(--fg-1); }
-.form-status.err { color: #B91C1C; }
-:root[data-theme="dark"] .form-status.err { color: #FCA5A5; }
+.contact-copy { display: flex; flex-direction: column; gap: 8px; max-width: 56ch; }
+.contact-copy a { color: inherit; font-weight: 700; }
+.contact-copy a:hover { text-decoration: none; }
 .contact .btn-solid { background: var(--bg-base); color: var(--primary); }
 .contact .btn-solid:hover { background: var(--surface); }
 .contact .btn-ghost { background: transparent; color: inherit; border: 2px solid currentColor; }
