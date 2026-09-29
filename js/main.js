@@ -3,38 +3,25 @@
   var root = document.documentElement;
   var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
-  /* ---- Email link ----
-     The address is not in the HTML (keeps it from scrapers); it is assembled here.
-     If no mail app takes the mailto: link, reveal a fallback with the address after a click. */
+  /* ---- Email address ----
+     Shown as plain text, but assembled here instead of sitting in the HTML, so simple
+     scrapers don't harvest it. Without JS the link falls back to LinkedIn. */
   var mail = document.getElementById("email-link");
-  var fb = document.getElementById("mail-fallback");
   if (mail && mail.dataset.m) {
     var addr = "";
     try { addr = atob(mail.dataset.m); } catch (e) {}
     if (addr) {
-      var subject = "Project%20inquiry";
-      mail.href = "mailto:" + addr + "?subject=" + subject;
+      mail.href = "mailto:" + addr + "?subject=Project%20inquiry";
+      mail.textContent = addr;
       mail.removeAttribute("data-m");
-      if (fb) {
-        mail.addEventListener("click", function () {
-          var left = false;
-          var mark = function () { left = true; };
-          window.addEventListener("blur", mark, { once: true });
-          document.addEventListener("visibilitychange", mark, { once: true });
-          setTimeout(function () {
-            window.removeEventListener("blur", mark);
-            document.removeEventListener("visibilitychange", mark);
-            if (left || !fb.hidden) return;
-            document.getElementById("mail-address").textContent = addr;
-            document.getElementById("mail-gmail").href =
-              "https://mail.google.com/mail/?view=cm&fs=1&to=" + encodeURIComponent(addr) + "&su=" + subject;
-            fb.hidden = false;
-          }, 1500);
-        });
-        var copy = document.getElementById("mail-copy");
+      var copy = document.getElementById("mail-copy");
+      if (copy && navigator.clipboard && navigator.clipboard.writeText) {
+        copy.hidden = false;
         copy.addEventListener("click", function () {
-          var done = function () { copy.textContent = "Copied!"; setTimeout(function () { copy.textContent = "Copy address"; }, 2000); };
-          if (navigator.clipboard && navigator.clipboard.writeText) { navigator.clipboard.writeText(addr).then(done, function () {}); }
+          navigator.clipboard.writeText(addr).then(function () {
+            copy.textContent = "Copied!";
+            setTimeout(function () { copy.textContent = "Copy"; }, 2000);
+          }, function () {});
         });
       }
     }
