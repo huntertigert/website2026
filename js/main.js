@@ -3,10 +3,28 @@
   var root = document.documentElement;
   var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
-  /* ---- Email link: address is not in the HTML, it is assembled here to keep it away from scrapers ---- */
+  /* ---- Email address ----
+     Shown as plain text, but assembled here instead of sitting in the HTML, so simple
+     scrapers don't harvest it. Without JS the link falls back to LinkedIn. */
   var mail = document.getElementById("email-link");
   if (mail && mail.dataset.m) {
-    try { mail.href = "mailto:" + atob(mail.dataset.m) + "?subject=Project%20inquiry"; mail.removeAttribute("data-m"); } catch (e) {}
+    var addr = "";
+    try { addr = atob(mail.dataset.m); } catch (e) {}
+    if (addr) {
+      mail.href = "mailto:" + addr + "?subject=Project%20inquiry";
+      mail.textContent = addr;
+      mail.removeAttribute("data-m");
+      var copy = document.getElementById("mail-copy");
+      if (copy && navigator.clipboard && navigator.clipboard.writeText) {
+        copy.hidden = false;
+        copy.addEventListener("click", function () {
+          navigator.clipboard.writeText(addr).then(function () {
+            copy.textContent = "Copied!";
+            setTimeout(function () { copy.textContent = "Copy"; }, 2000);
+          }, function () {});
+        });
+      }
+    }
   }
 
   /* ---- Theme toggle (initial theme is set by the inline script in <head>) ---- */

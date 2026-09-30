@@ -340,6 +340,10 @@ h2 { font-size: 2.125rem; line-height: 2.5rem; font-weight: 700; letter-spacing:
 .contact-copy { display: flex; flex-direction: column; gap: 8px; max-width: 56ch; }
 .contact-copy a { color: inherit; font-weight: 700; }
 .contact-copy a:hover { text-decoration: none; }
+.contact-email { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; margin-top: 8px; font-size: 1.25rem; line-height: 1.75rem; }
+.contact-label { font-weight: 500; }
+.contact-email a { word-break: break-all; }
+.contact-email [hidden] { display: none; }
 .contact .btn-solid { background: var(--bg-base); color: var(--primary); }
 .contact .btn-solid:hover { background: var(--surface); }
 .contact .btn-ghost { background: transparent; color: inherit; border: 2px solid currentColor; }
